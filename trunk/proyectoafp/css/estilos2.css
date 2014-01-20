@@ -1,0 +1,119 @@
+body {
+  text-align:center;
+  }
+#contenedor {
+  margin-top:0;/*lo que quieras poner de margin arriba*/
+  margin-right:auto;
+  margin-bottom:0;
+  margin-left:auto;
+  }
+
+
+/* Menu horizontal con buscador
+----------------------------------------------- */
+#menuWrapper {
+width:1000; /* Ancho del men� */
+height:35px;
+padding-left:14px;
+/* background:#CC0000; Color de fondo */
+border-radius:5px; /* Bordes redondeados */
+}
+.menu {
+width: 100%;
+float: left;
+font-family:"Lucida Sans Unicode", "Trebuchet Unicode MS", "Lucida Grande",sans-serif;
+font-size:15px; /* Tama�o de la fuente */
+font-weight:bold;
+}
+.menu ul {
+float:left;
+height:0px;
+list-style:none;
+margin:0;
+padding:0;
+border-radius: 0px 0px 20px 20px; /* Bordes redondeados del submen� */
+}
+.menu li{
+float:left;
+padding:0px;
+}
+.menu li a{
+background:#CC0000;
+color:#B0B0B0; /* Color de la fuente */
+display:block;
+font-weight:normal;
+line-height:35px;
+margin:0px;
+padding:0px 25px; /* Espacio entre cada pesta�a */
+text-align:center;
+text-decoration:none;
+}
+.menu li a:hover, .menu ul li:hover a {
+background: #CC0000; /* Color de las pesta�as al pasar el cursor */
+color:#FFFFFF; /* Color del texto al pasar el cursor */
+text-decoration:none;
+}
+
+.menu li ul {
+background:#000000;
+opacity: 0.5;/* Color de fondo del submen� */
+display:none;
+height:auto;
+padding:0px;
+margin:0px;
+position:absolute;
+width:200px; /* Ancho del submen� */
+z-index:100;
+border-top:1px solid #CC0000; /* Borde superior del submen� */
+}
+.menu li:hover ul{
+display:block;
+}
+.menu li li {
+display:block;
+float:none;
+margin:0px;
+padding:0px;
+width:200px;
+}
+.menu li:hover li a {
+background:none;
+border-radius: 0px 0px 20px 20px; /* Borde de las subpesta�as */
+}
+.menu li ul a {
+display:block;
+height:35px;
+font-size:12px;
+font-style:normal;
+margin:0px;
+padding:0px 10px 0px 15px;
+text-align:left;
+}
+.menu li ul a:hover, .menu li ul li:hover a{
+background:#000000; /* Color de las subpesta�as al pasar el cursor */
+color:#ffffff;
+font-weight:bold;
+text-decoration:none;
+}
+.menu li2{
+float:left;
+padding:0px;
+}
+.menu li2 a{
+background:#B0B0B0;
+color:#FFFFFF; /* Color de la fuente */
+display:block;
+font-weight:normal;
+line-height:35px;
+margin:0px;
+padding:0px 25px; /* Espacio entre cada pesta�a */
+text-align:center;
+text-decoration:none;
+}
+.menu li2 a:hover, .menu ul li2:hover a {
+background:#B0B0B0; /* Color de las pesta�as al pasar el cursor */
+color:#CC0000; /* Color del texto al pasar el cursor */
+text-decoration:none;
+}
+
+

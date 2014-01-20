@@ -1,0 +1,58 @@
+#menu{
+ width:1000px;
+ padding:5px;
+ }
+
+menu{
+ color:#B0B0B0;
+ display:inline-block;
+ margin:0px;
+ background:linear-gradient(#CC0000 0%,#CC0000 100%);
+ background:-moz-linear-gradient(#CC0000 0%,#CC0000 100%);
+ background:-ms-linear-gradient(#CC0000 0%,#CC0000 100%);
+ background:-o-linear-gradient(#CC0000 0%,#CC0000 100%);
+ background:-webkit-linear-gradient(#CC0000 0%,#CC0000 100%);
+ border:solid 1px #CC0000;
+ border-radius:5px;
+ width:150px;
+ padding:5px;
+ }
+menu:hover{
+ background:linear-gradient( #CC0000 0%,  #CC0000 100%);
+ background:-moz-linear-gradient( #CC0000 0%,  #CC0000 100%);
+ background:-ms-linear-gradient( #CC0000 0%,  #CC0000 100%);
+ background:-o-linear-gradient( #CC0000 0%,  #CC0000 100%);
+ background:-webkit-linear-gradient( #CC0000 0%, #CC0000 100%);
+ border-radius:3px;
+ border:solid 1px  #CC0000;
+ color:#FFFFFF;
+ } 
+#menu2{
+ 
+ width:1000px;
+ padding:5px;
+ }
+menu2{
+ color:#FFFFFF;
+ display:inline-block;
+ margin:0px;
+ background:linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-moz-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-ms-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-o-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-webkit-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ border:solid 1px #B0B0B0;
+ border-radius:5px;
+ width:150px;
+ padding:5px;
+ }
+ menu2:hover{
+ background:linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-moz-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-ms-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-o-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ background:-webkit-linear-gradient(#B0B0B0 0%,#B0B0B0 100%);
+ border-radius:3px;
+ border:solid 1px #B0B0B0;
+ color:#FFFFFF;
+ }
