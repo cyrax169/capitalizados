@@ -11,18 +11,34 @@
                 <?php
                     include('menu.php');
                 ?>
-
-         
-
-           
-         
-
-           
-           <form method="post" action="">
-           <input type="hidden" name="op" value="login"/>
-           usuario:<input type="text" name="usuario"/><br/>
-           contraseña: <input type="password" name="contrasenia"/><br/>
-           <input type="submit" value="Entrar"/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+          <form method="post" action="" > 
+            <table border="0" align="center">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Usuario</td>
+                        <td><input type="text" name="usuario" /></td>
+                    </tr>
+                    <tr>
+                        <td>Contraseña</td>
+                        <td><input type="password" name="contrasena" value="password" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Entrar"/></td>
+                    </tr>
+                </tbody>
+            </table>
            </form>
        </div>
    </body>
