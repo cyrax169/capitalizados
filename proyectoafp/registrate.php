@@ -1,3 +1,26 @@
+<?php
+include("conexion.php");
+    $result = "";
+    $conn = dbConnect();
+    $combobox;
+    $row;
+ 
+    $sql = 'SELECT  id, nombre FROM afp';
+    $stmt = $conn->query($sql);
+    $rows = $stmt->fetchAll();
+    
+    $sql2 = 'SELECT  id, nombre FROM regiones';
+    $stmt2 = $conn->query($sql2);
+    $rows2 = $stmt2->fetchAll();
+    
+    if (empty($rows)) {
+        $result = "No se encontraron resultados afp!!";
+    }
+    if (empty($rows2)) {
+        $result = "No se encontraron resultados regiones!!";
+    }
+ ?>
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -11,6 +34,8 @@
                 <?php
                     include('menu.php');
                 ?>
+            
+<p><?php echo $result;?></p>
 <h1>Datos de identificación</h1>  
 <table border="0" align="center" bgcolor="#B0B0B0">
                <thead>
@@ -39,7 +64,11 @@
                    </tr>
                    <tr>
                        <td height="45">Región de Residencia</td>
-                       <td><input type="text" name="region"/></td>
+                       <td><select name="region_residencia">
+                        <?php foreach ($rows2 as $row) {
+                            echo '<option value="'.$row['id'].'">'.$row['nombre'].'</option>';
+                        }?>
+                    </select></td></td>
                    </tr>
                    <tr>
                        <td height="45">Genero</td>
@@ -48,7 +77,11 @@
                    </tr>
                    <tr>
                        <td height="45">AFP en que se encuentra</td>
-                       <td><input type="text" name="afp"/></td>
+                       <td><select name="AFP en que se encuentra">
+                        <?php foreach ($rows as $row) {
+                            echo '<option value="'.$row['id'].'">'.$row['nombre'].'</option>';
+                        }?>
+                    </select></td>
                    </tr>
                    <tr>
                        <td height="45">Cartola Cuatrimestral</td>
