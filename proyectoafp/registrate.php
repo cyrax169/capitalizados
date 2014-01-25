@@ -43,7 +43,8 @@
                    </tr>
                    <tr>
                        <td height="45">Genero</td>
-                       <td><input type="radio" name="femenino" value="" checked="checked"  />Femenino<input type="radio" name="masculino" value="" checked=""  />Masculino</td>    
+                       <td><input type="radio" name="boletin" value="si" checked onClick=""> Femenino
+<input type="radio" name="boletin" value="no" onClick=""> Masculino</td>    
                    </tr>
                    <tr>
                        <td height="45">AFP en que se encuentra</td>
@@ -51,13 +52,17 @@
                    </tr>
                    <tr>
                        <td height="45">Cartola Cuatrimestral</td>
-                       <td><input type="file" name="cartola" value="" disabled="disabled" /></td>
+                       <td><input type="file" name="cartola" value="" /></td>
                    </tr>
                    <tr>
                        <td height="45">Certificado Saldo Cuenta</td>
-                       <td><input type="file" name="certificado" value="" disabled="disabled" /></td>
+                       <td><input type="file" name="certificado" value="" /></td>
                    </tr>
                    
+                    <tr>
+                       <td height="45"> </td>
+                       <td><input type="submit" value="Registrar" name="registrar" /></td>
+                   </tr>
                </tbody>
            </table>
       </div>
