@@ -1,0 +1,22 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<ul>
+    <li>
+        <a href="index.jsp">Inicio</a>            
+    </li>
+    <li>
+        <a href="Login.jsp">Iniciar Sesión</a>            
+    </li>
+    <li>
+        <a href="registrar.jsp">Registrar Usuarios</a>            
+    </li>
+    <li>
+        <a href="RegistrarDepto.jsp">Registrar Departamentos</a>            
+    </li>
+    <li>
+        <a href="listaUsuarios.jsp">Listar Usuarios</a>            
+    </li>                        
+    <li>
+        <a href="ListaDepartamentos.jsp">Listar Departamentos</a>            
+    </li>    
+</ul>
