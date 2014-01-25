@@ -36,6 +36,8 @@ include("conexion.php");
                 ?>
             
 <p><?php echo $result;?></p>
+
+<FORM action="insertarregistro.php" method="post"> 
 <h1>Datos de identificación</h1>  
 <table border="0" align="center" bgcolor="#B0B0B0">
                <thead>
@@ -72,12 +74,12 @@ include("conexion.php");
                    </tr>
                    <tr>
                        <td height="45">Genero</td>
-                       <td><input type="radio" name="boletin" value="si" checked onClick=""> Femenino
-<input type="radio" name="boletin" value="no" onClick=""> Masculino</td>    
+                       <td><input type="radio" name="genero" value="1" checked onClick=""> Femenino
+<input type="radio" name="genero" value="2" onClick=""> Masculino</td>    
                    </tr>
                    <tr>
                        <td height="45">AFP en que se encuentra</td>
-                       <td><select name="AFP en que se encuentra">
+                       <td><select name="afp">
                         <?php foreach ($rows as $row) {
                             echo '<option value="'.$row['id'].'">'.$row['nombre'].'</option>';
                         }?>
@@ -89,15 +91,17 @@ include("conexion.php");
                    </tr>
                    <tr>
                        <td height="45">Certificado Saldo Cuenta</td>
-                       <td><input type="file" name="certificado" value="" /></td>
+                       <td><input type="file" value=""  name="certificado" /></td>
                    </tr>
                    
                     <tr>
                        <td height="45"> </td>
                        <td><input type="submit" value="Registrar" name="registrar" /></td>
                    </tr>
+                  
                </tbody>
            </table>
+ </FORM> 
       </div>
    </body>
 </html>
