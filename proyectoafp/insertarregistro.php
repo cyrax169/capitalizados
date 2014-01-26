@@ -16,8 +16,18 @@ $apellidos=$apellido1 .' '. $apellido2;
 echo $rut,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,$cartola,$certificado;
 
 include "conexion.php"; 
-$guardar = mysql_query("INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$genero','$afp','$cartola','$certificado');"); 
-mysql_close(); 
+$conn = dbConnect();
+//$con=mysqli_connect("example.com","peter","abc123","my_db");
+// Check connection
+if (mysqli_connect_errno())
+  {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  }
+
+//mysqli_query($conn,"INSERT INTO Persons (FirstName, LastName, Age)VALUES ('Peter', 'Griffin',35)");
+mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$genero','$afp','$cartola','$certificado');");
+//$guardar = mysql_query("INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$genero','$afp','$cartola','$certificado');"); 
+mysqli_close($conn); 
 ?> 
 <HTML> 
 <HEAD> 
