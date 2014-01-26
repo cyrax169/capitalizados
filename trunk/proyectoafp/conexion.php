@@ -6,7 +6,8 @@ function dbConnect (){
     $user = 'root';
     $pwd =  '';
     try {
-        $conn = new PDO('mysql:host='.$host.';dbname='.$db, $user, $pwd);
+        //$conn = new PDO('mysql:host='.$host.';dbname='.$db, $user, $pwd);
+        $conn=mysqli_connect($host,$user,$pwd,$db);
         //echo 'Connected succesfully.<br>';
     }
     catch (PDOException $e) {
