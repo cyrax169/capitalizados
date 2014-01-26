@@ -1,17 +1,29 @@
 <?php
 include("conexion.php");
-    $result = "";
+   // $result = "";
     $conn = dbConnect();
-    $combobox;
+    //$combobox;
     $row;
- 
-    $sql = 'SELECT  id, nombre FROM afp';
+
+    
+    
+   
+    
+    
+/*while($row = mysqli_fetch_array($result))
+  {
+  echo $row['FirstName'] . " " . $row['LastName'];
+  echo "<br>";
+  }*/
+    
+    
+  /*  $sql = 'SELECT  id, nombre FROM afp';
     $stmt = $conn->query($sql);
     $rows = $stmt->fetchAll();
     
     $sql2 = 'SELECT  id, nombre FROM regiones';
     $stmt2 = $conn->query($sql2);
-    $rows2 = $stmt2->fetchAll();
+    $rows2 = $stmt2->fetchAll();*/
     
     if (empty($rows)) {
         $result = "No se encontraron resultados afp!!";
@@ -34,9 +46,7 @@ include("conexion.php");
                 <?php
                     include('menu.php');
                 ?>
-            
-<p><?php echo $result;?></p>
-
+           
 <FORM action="insertarregistro.php" method="post"> 
 <h1>Datos de identificación</h1>  
 <table border="0" align="center" bgcolor="#B0B0B0">
@@ -67,10 +77,11 @@ include("conexion.php");
                    <tr>
                        <td height="45">Región de Residencia</td>
                        <td><select name="region_residencia">
-                        <?php foreach ($rows2 as $row) {
-                            echo '<option value="'.$row['id'].'">'.$row['nombre'].'</option>';
-                        }?>
-                    </select></td></td>
+                              <?php  $result = mysqli_query($conn,"SELECT  id, nombre FROM regiones");
+    ;
+                        while ($row= mysqli_fetch_array($result)){?> <OPTION VALUE="<?php echo $row['id'] ?>"><?php echo $row['nombre'] ?></OPTION><?php } ?> 
+            
+                    </select></td>
                    </tr>
                    <tr>
                        <td height="45">Genero</td>
@@ -80,9 +91,8 @@ include("conexion.php");
                    <tr>
                        <td height="45">AFP en que se encuentra</td>
                        <td><select name="afp">
-                        <?php foreach ($rows as $row) {
-                            echo '<option value="'.$row['id'].'">'.$row['nombre'].'</option>';
-                        }?>
+                        <?php        $result2 = mysqli_query($conn,"SELECT  id, nombre FROM afp");
+                             while ($row2=mysqli_fetch_array($result2)){?> <OPTION VALUE="<?php echo $row2['id'] ?>"><?php echo $row2['nombre'] ?></OPTION><?php } ?> 
                     </select></td>
                    </tr>
                    <tr>
