@@ -1,5 +1,4 @@
 <?php 
-/* @var $rut type */
 $rut=$_POST['rut']; 
 $nombre1=$_POST['nombre1']; 
 $nombre2=$_POST['nombre2'];
@@ -17,24 +16,20 @@ echo $rut,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,
 
 include "conexion.php"; 
 $conn = dbConnect();
-//$con=mysqli_connect("example.com","peter","abc123","my_db");
-// Check connection
 if (mysqli_connect_errno())
   {
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-//mysqli_query($conn,"INSERT INTO Persons (FirstName, LastName, Age)VALUES ('Peter', 'Griffin',35)");
 mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$genero','$afp','$cartola','$certificado');");
-//$guardar = mysql_query("INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$genero','$afp','$cartola','$certificado');"); 
 mysqli_close($conn); 
 ?> 
 <HTML> 
 <HEAD> 
-<TITLE>Producto</TITLE> 
+<TITLE>Registrado</TITLE> 
 </HEAD> 
 <BODY> 
-<h1><div align="center">Registro Insertado</div></h1> 
-<div align="center"><a href="index.php">Ingresar otro registro</a></div> 
+<h1><div align="center">Su registro se ha realizado con éxito</div></h1> 
+<div align="center"><a href="index.php">Volver al inicio</a></div> 
 </BODY> 
 </HTML> 
