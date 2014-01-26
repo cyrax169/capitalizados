@@ -9,7 +9,7 @@
       
     
 <div id='menuWrapper'>
-          <div class='menu'>
+    <div class='menu'>
           <ul>
           <li><a href="index.php">Home</a></li>
           <li><a href="#">Quienes Somos</a>
@@ -37,6 +37,6 @@
 
 
 
-         </div>
+        </div>
        </div>
         
