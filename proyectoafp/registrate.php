@@ -46,7 +46,17 @@ include("conexion.php");
                 <?php
                     include('menu.php');
                 ?>
-           
+            
+  <table border="0" >
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                 <tbody>
+                    <tr>
+                         <td height="500" width="500"></td>
+                         <td height="500" width="700">
 <FORM action="insertarregistro.php" method="post"> 
 <h1></h1>  
 <table border="0" align="center" bgcolor="#D0D0D0" >
@@ -113,6 +123,13 @@ include("conexion.php");
                </tbody>
            </table>
  </FORM> 
+                             </td>
+                             <td height="500" width="500"></td>
+                              </tr>
+                              </tbody>
+            </table>
+
       </div>
+        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
    </body>
 </html>
