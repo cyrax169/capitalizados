@@ -4,27 +4,6 @@ include("conexion.php");
     $conn = dbConnect();
     //$combobox;
     $row;
-
-    
-    
-   
-    
-    
-/*while($row = mysqli_fetch_array($result))
-  {
-  echo $row['FirstName'] . " " . $row['LastName'];
-  echo "<br>";
-  }*/
-    
-    
-  /*  $sql = 'SELECT  id, nombre FROM afp';
-    $stmt = $conn->query($sql);
-    $rows = $stmt->fetchAll();
-    
-    $sql2 = 'SELECT  id, nombre FROM regiones';
-    $stmt2 = $conn->query($sql2);
-    $rows2 = $stmt2->fetchAll();*/
-    
     if (empty($rows)) {
         $result = "No se encontraron resultados afp!!";
     }
@@ -42,6 +21,7 @@ include("conexion.php");
          ?>
     </head>
     <body>
+         <div id="page-wrap">
         <div id="contenedor">  
                 <?php
                     include('menu.php');
@@ -130,6 +110,7 @@ include("conexion.php");
             </table>
 
       </div>
+              </div>
         <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
    </body>
 </html>
