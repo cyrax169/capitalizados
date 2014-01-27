@@ -12,20 +12,14 @@
     <div class='menu'>
           <ul>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">Quienes Somos</a>
-          <ul>
-          <li><a href="URL del enlace">Pestaña 2.1</a></li>
-          <li><a href="URL del enlace">Pestaña 2.2</a></li>
-          <li><a href="URL del enlace">Pestaña 2.3</a></li>
-          <li><a href="URL del enlace">Pestaña 2.4</a></li>
-          </ul>
-          </li>
+          <li><a href="#">Quienes Somos</a></li>
           <li><a href="#">Nuestros Servicios</a>
           <ul>
-          <li><a href="URL del enlace">Pestaña 3.1</a></li>
-          <li><a href="URL del enlace">Pestaña 3.2</a></li>
-          <li><a href="URL del enlace">Pestaña 3.3</a></li>
-          <li><a href="URL del enlace">Pestaña 3.4</a></li>
+          <li><a href="URL del enlace">Porqué inclinarse por nuestra asesoría</a></li>
+          <li><a href="URL del enlace">Servicios ofrecidos</a></li>
+          <li><a href="URL del enlace">Beneficios adicionales de una estrategia activa</a></li>
+          <li><a href="URL del enlace">Procedimiento de calculos de honorarios de la asesoría</a></li>
+          <li><a href="URL del enlace">Información relevante para los potenciales clientes</a></li>
           </ul>
           </li>
           <li><a href="acceso.php">Acceso Usuarios</a></li>
