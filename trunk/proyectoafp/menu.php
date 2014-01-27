@@ -1,13 +1,4 @@
- <!--  <div id="menu">
-            <menu>Home</menu>
-             <menu>Quienes Somos</menu>
-            <menu>Nuestros Servicios</menu>
-            <menu>Acceso Usuarios</menu>
-            <menu2>Registrate</menu2>
-            <menu2>Contacto</menu2>
-        </div>-->
-      
-    
+
 <div id='menuWrapper'>
     <div class='menu'>
           <ul>
