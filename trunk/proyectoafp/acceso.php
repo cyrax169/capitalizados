@@ -14,11 +14,17 @@
                 <?php
                     include('menu.php');
                 ?>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+
+ <table border="0" >
+                <thead>
+                    <tr>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td height="500" width="500"></td>
+                         <td height="500" width="500">
           <form method="post" action="" > 
             <table border="0" align="center">
                 <thead>
@@ -43,6 +49,12 @@
                 </tbody>
             </table>
            </form>
+                             </td>
+                             <td height="500" width="500"></td>
+                               </tr>
+                 
+                </tbody>
+            </table>
        </div>
    </div>
     
