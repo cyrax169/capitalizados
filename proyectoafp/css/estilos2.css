@@ -12,7 +12,7 @@ body {
 /* Menu horizontal 
 ----------------------------------------------- */
 #menuWrapper {
-width:1000; /* Ancho del men� */
+width:100%; /* Ancho del men� */
 height:35px;
 padding-left:14px;
 /* background:#CC0000; Color de fondo */
