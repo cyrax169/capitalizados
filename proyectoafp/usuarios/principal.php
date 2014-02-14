@@ -10,13 +10,13 @@
         <div id="page-wrap">
         <div id="contenedor">  
                 <?php
-                    include('menu.php');
+                    include('menu_usuario.php');
                 ?>
 
        </div>
           
 
             </div>
-        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
+        <div id="footer"> <a href=""><img src="../imagenes/footer.png" /></a></div>
    </body>
 </html>

@@ -1,8 +1,12 @@
-<?php
+<LINK rel="stylesheet" type="text/css" href="../css/estilos2.css">
+<div id='menuWrapper'>
+    <div class='menu'>
+          <ul>
+          <li><a href="index.php">Home</a></li>
+          <li><a href="buscar_cliente.php">Buscar Cliente</a></li>
+           </ul>
+        
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+        </div>
+       </div>
+        

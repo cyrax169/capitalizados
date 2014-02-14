@@ -1,8 +1,22 @@
-<?php
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Usuario Registrado</title>
+         <?php
+              include('header.php');
+         ?>
+    </head>
+    <body>
+        <div id="page-wrap">
+        <div id="contenedor">  
+                <?php
+                    include('menu_administrador.php');
+                ?>
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+       </div>
+          
 
+            </div>
+        <div id="footer"> <a href=""><img src="../imagenes/footer.png" /></a></div>
+   </body>
+</html>

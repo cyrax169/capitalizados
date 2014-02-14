@@ -1,4 +1,4 @@
-
+<LINK rel="stylesheet" type="text/css" href="css/estilos2.css">
 <div id='menuWrapper'>
     <div class='menu'>
           <ul>
