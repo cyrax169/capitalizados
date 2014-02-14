@@ -3,8 +3,12 @@ include("../conexion.php");
    // $result = "";
     $conn = dbConnect();
     //$combobox;
-    
+    if(isset($_POST['nombre_seleccionado'])){
+    $rut=$_POST['nombre_seleccionado'];
+    }
+ if(isset($_POST['rut'])){
     $rut=$_POST['rut'];
+    }
     $datos = mysqli_query($conn,"SELECT  * FROM cliente WHERE rut='$rut'");
     
    while($row2=mysqli_fetch_array($datos)){
