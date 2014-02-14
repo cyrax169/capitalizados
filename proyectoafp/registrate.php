@@ -42,7 +42,7 @@ include("conexion.php");
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
                    <tr>
-                       <th height="70"><font color="#CC0000">Datos de identificación</font></th>
+                       <th height="65"><font color="#CC0000">Datos de identificación</font></th>
                        <th></th>
                    </tr>
                </thead>
@@ -64,6 +64,14 @@ include("conexion.php");
                    <tr>
                        <td height="38"><font color="#666666">Fecha nacimiento</font></td>
                        <td><input type="date" name="fecha_nacimiento"/></td>
+                   </tr>
+                    <tr>
+                       <td height="38"><font color="#666666">Tipo Cliente</font></td>
+                       <td><select name="tipo_cliente">
+                               <option VALUE="0">Seleccione tipo</option>
+                               <option VALUE="1">Trabajador Activo</option>
+                               <option VALUE="2">Trabajador Jubilado</option>
+                           </select></td>
                    </tr>
                    <tr>
                        <td height="38"><font color="#666666">Región de Residencia</font></td>
