@@ -43,7 +43,12 @@ include("../conexion.php");
                <tbody>
                  <tr>
                        <td height="38"><font color="#666666">ingrese rut</font></td>
-                       <td><input type="text" name="rut" value="" /></td>
+                       <td><select name="rut">
+                               <OPTION VALUE="0">Seleccione Rut</OPTION>
+                        <?php        $result2 = mysqli_query($conn,"SELECT  rut FROM cliente");
+                        
+                             while ($row2=mysqli_fetch_array($result2)){?> <OPTION VALUE="<?php echo $row2['rut'] ?>"><?php echo $row2['rut'] ?></OPTION><?php } ?> 
+                    </select></td>
                    </tr>
                     
                     <tr>

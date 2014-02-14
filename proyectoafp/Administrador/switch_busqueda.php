@@ -8,7 +8,7 @@ switch ($buscar)
              break;
           case '1': $opcdir="<script>location.href='../administrador/Busca_rut.php';</script>";
                           break;
-          case '2' : $opcdir="<script>location.href='../administrador/Busca_rut.php';</script>";
+          case '2' : $opcdir="<script>location.href='../administrador/Busca_nombre.php';</script>";
              break;
           case '3' : $opcdir="<script>location.href='../administrador/Busca_rut.php';</script>";
              break;
