@@ -25,7 +25,7 @@
                     <tr>
                         <td height="500" width="500"></td>
                          <td height="500" width="500">
-          <form method="post" action="" > 
+          <form method="post" action="switch_acceso.php" > 
             <table border="0" align="center">
                 <thead>
                     <tr>
