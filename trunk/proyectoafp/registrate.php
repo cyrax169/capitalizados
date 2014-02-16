@@ -21,46 +21,20 @@ include("conexion.php");
          ?>
 <script type="text/javascript">
 function valida(f) {
-    
   var ok = true;
   var msg = "Debes escribir algo en los campos:\n";
-  if(f.elements[0].value == "")
-  {
-     
-    msg += "-rut\n";
-    ok = false;
-  }
-
-  if(f.elements["nombre1"].value == "")
-  {
-   msg += "- nombre1\n";
-    ok = false;
-  }
-
-  if(f.elements["nombre2"].value == "")
-  {
-    msg += "- nombre2\n";
-    ok = false;
-  }
-  
-  if(f.elements["apellido1"].value == "")
-  {
-   msg += "- primer apellido\n";
-    ok = false;
-  }
-
-  if(f.elements["apellido2"].value == "")
-  {
-    msg += "- segundo apellido\n";
-    ok = false;
-  }
-
-  if(ok == false)  {
-       
-    alert(msg);
-    }
-  return ok;
-}
+  if(f.elements[0].value == ""){msg += "-rut\n";ok = false;}
+  if(f.elements["nombre1"].value == ""){msg += "- nombre1\n";ok = false;}
+  if(f.elements["nombre2"].value == ""){msg += "- nombre2\n";ok = false;}
+  if(f.elements["apellido1"].value == ""){msg += "- primer apellido\n";ok = false;}
+  if(f.elements["apellido2"].value == ""){msg += "- segundo apellido\n";ok = false;}
+  if(f.elements["fecha_nacimiento"].value == ""){msg += "- fecha nacimiento\n";ok = false;}
+  if(f.elements["tipo_cliente"].value == "0"){msg += "- tipo de cliente\n";ok = false;}
+  if(f.elements["region_residencia"].value == "0"){msg += "- region de residencia\n";ok = false;}
+  if(f.elements["afp"].value == "0"){msg += "- Nombre AFP\n";ok = false;}
+  if(f.elements["certificado"].value == ""){msg += "- Subir Certificado\n";ok = false;}
+  if(f.elements["cartola"].value == ""){msg += "- Subir Cartola\n";ok = false;}
+  if(ok == false){alert(msg);}return ok;}
     </script>
     </head>
     <body>
@@ -119,6 +93,7 @@ function valida(f) {
                    <tr>
                        <td height="35"><font color="#666666">Región de Residencia</font></td>
                        <td><select name="region_residencia">
+                               <option VALUE="0">Seleccione Region</option>
                               <?php  $result = mysqli_query($conn,"SELECT  id, nombre FROM regiones");
     ;
                         while ($row= mysqli_fetch_array($result)){?> <OPTION VALUE="<?php echo $row['id'] ?>"><?php echo $row['nombre'] ?></OPTION><?php } ?> 
@@ -133,6 +108,7 @@ function valida(f) {
                    <tr>
                        <td height="35"><font color="#666666">AFP en que se encuentra</font></td>
                        <td><select name="afp">
+                               <option VALUE="0">Seleccione tipo</option>
                         <?php        $result2 = mysqli_query($conn,"SELECT  id, nombre FROM afp");
                              while ($row2=mysqli_fetch_array($result2)){?> <OPTION VALUE="<?php echo $row2['id'] ?>"><?php echo $row2['nombre'] ?></OPTION><?php } ?> 
                     </select></td>
