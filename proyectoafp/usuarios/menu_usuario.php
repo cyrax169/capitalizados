@@ -2,8 +2,8 @@
 <div id='menuWrapper'>
     <div class='menu'>
           <ul>
-          <li><a href="index.php">Home</a></li>
-          <li><a href="#">Quienes Somos</a></li>
+          <li><a href="home.php">Home</a></li>
+          <li><a href="quienes_somos.php">Quienes Somos</a></li>
           <li><a href="#">Nuestros Servicios</a>
           <ul>
           <li><a href="URL del enlace">Porqué inclinarse por nuestra asesoría</a></li>
