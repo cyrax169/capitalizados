@@ -8,11 +8,14 @@ $fecha_nacimiento=$_POST['fecha_nacimiento'];
 $region_residencia=$_POST['region_residencia'];
 $genero=$_POST['genero'];
 $afp=$_POST['afp'];
+$telefono=$_POST['telefono'];
+$email=$_POST['email'];
+$tipo_cliente=$_POST['tipo_cliente'];
 $cartola=$_POST['cartola'];
 $certificado=$_POST['certificado'];
 $nombres=$nombre1 .' '. $nombre2;
 $apellidos=$apellido1 .' '. $apellido2;
-echo $rut,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,$cartola,$certificado;
+echo $tipo_cliente,$email,$rut,$telefono,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,$cartola,$certificado;
 
 include "conexion.php"; 
 $conn = dbConnect();
@@ -21,7 +24,7 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$genero','$afp','$cartola','$certificado');");
+mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,tipo_cliente,email,telefono,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$tipo_cliente','$email',$telefono,'$genero','$afp','$cartola','$certificado');");
 mysqli_close($conn); 
 ?> 
 <HTML> 

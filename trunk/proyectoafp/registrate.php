@@ -59,31 +59,31 @@ function valida(f) {
 <table border="0" align="top" bgcolor="#D0D0D0" >
                <thead>
                    <tr>
-                       <th height="30"><font color="#CC0000">Datos de identificación</font></th>
+                       <th height="25"><font color="#CC0000">Datos de identificación</font></th>
                        <th></th>
                    </tr>
                </thead>
                <tbody>
                    <tr>
-                       <td  height="35"><font color="#666666">Rut<font/></td>
+                       <td  height="34"><font color="#666666">Rut<font/></td>
                        <td><input type="text" name="rut" maxlength="10"/><font color="#666666">Ej: 12345678-9</font></td>
                        
                    </tr>
                    
                    <tr>
-                       <td height="35"><font color="#666666">Nombres</font></td>
+                       <td height="34"><font color="#666666">Nombres</font></td>
                        <td><input type="text" name="nombre1"/><input type="text" name="nombre2"/></td>
                    </tr>
                    <tr>
-                       <td height="35"><font color="#666666">Apellidos</font></td>
+                       <td height="34"><font color="#666666">Apellidos</font></td>
                        <td><input type="text" name="apellido1"/><input type="text" name="apellido2"/></td>
                    </tr>
                    <tr>
-                       <td height="35"><font color="#666666">Fecha nacimiento</font></td>
+                       <td height="34"><font color="#666666">Fecha nacimiento</font></td>
                        <td><input type="date" name="fecha_nacimiento"/></td>
                    </tr>
                     <tr>
-                       <td height="35"><font color="#666666">Tipo Cliente</font></td>
+                       <td height="34"><font color="#666666">Tipo Cliente</font></td>
                        <td><select name="tipo_cliente">
                                <option VALUE="0">Seleccione tipo</option>
                                <option VALUE="1">Trabajador Activo</option>
@@ -91,7 +91,15 @@ function valida(f) {
                            </select></td>
                    </tr>
                    <tr>
-                       <td height="35"><font color="#666666">Región de Residencia</font></td>
+                       <td height="34"><font color="#666666">Email</font></td>
+                       <td><input type="text" name="email"/></td>
+                   </tr>
+                   <tr>
+                       <td height="34"><font color="#666666">Telefono</font></td>
+                       <td><input type="text" name="telefono"/></td>
+                   </tr>
+                   <tr>
+                       <td height="34"><font color="#666666">Región de Residencia</font></td>
                        <td><select name="region_residencia">
                                <option VALUE="0">Seleccione Region</option>
                               <?php  $result = mysqli_query($conn,"SELECT  id, nombre FROM regiones");
@@ -101,12 +109,12 @@ function valida(f) {
                     </select></td>
                    </tr>
                    <tr>
-                       <td height="35"><font color="#666666">Genero</font></td>
+                       <td height="34"><font color="#666666">Genero</font></td>
                        <td><input type="radio" name="genero" value="1" checked onClick=""> <font color="#666666">Femenino</font>
 <input type="radio" name="genero" value="2" onClick=""><font color="#666666">Masculino</font> </td>    
                    </tr>
                    <tr>
-                       <td height="35"><font color="#666666">AFP en que se encuentra</font></td>
+                       <td height="34"><font color="#666666">AFP en que se encuentra</font></td>
                        <td><select name="afp">
                                <option VALUE="0">Seleccione tipo</option>
                         <?php        $result2 = mysqli_query($conn,"SELECT  id, nombre FROM afp");
@@ -114,7 +122,7 @@ function valida(f) {
                     </select></td>
                    </tr>
                    <tr>
-                       <td height="38"><font color="#666666">Cartola Cuatrimestral</font></td>
+                       <td height="30"><font color="#666666">Cartola Cuatrimestral</font></td>
                        <td><input type="file" name="cartola" value="" /></td>
                    </tr>
                    <tr>
@@ -130,7 +138,7 @@ function valida(f) {
            </table>
  </FORM> 
                              </td>
-                             <td height="350" width="500"></td>
+                             <td height="350" width="300"></td>
                               </tr>
                               </tbody>
             </table>
