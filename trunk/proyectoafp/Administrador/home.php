@@ -14,18 +14,20 @@
                 ?>
 
        </div>
-            <table border="0"  >
+            <table border="0" >
                 <thead>
                     <tr>
-                        <th  height="200" ></th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td height="50" width="500"></td>
-                        <td height="50" width="250">Valentin Santander<br> santander.valentin@gmail.com</td> 
-                        <td height="50" width="300">Tommy Ivan Bergez Norambuena <br> tbergez@gmail.com</td>
+                        <td height="500" width="500"></td>
+                        <td height="500" width="500"><img src="imagenes/captura.png" border="0" width="100" height="90" /></td>
+                        <td height="500" width="500"><img src="imagenes/captura2.png" border="0" width="100" height="90" /></td>
+                         
                     </tr>
+                 
                 </tbody>
             </table>
 
@@ -33,5 +35,3 @@
         <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
    </body>
 </html>
-
-

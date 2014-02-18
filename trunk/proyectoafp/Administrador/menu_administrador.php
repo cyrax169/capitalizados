@@ -2,7 +2,7 @@
 <div id='menuWrapper'>
     <div class='menu'>
           <ul>
-          <li><a href="index.php">Home</a></li>
+              <li><a href="home.php">Home</a></li>
           <li><a href="buscar_cliente.php">Buscar Cliente</a></li>
            </ul>
         
