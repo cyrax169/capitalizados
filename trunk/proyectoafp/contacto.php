@@ -1,8 +1,38 @@
-<?php
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home</title>
+         <?php
+              include('header.php');
+         ?>
+    </head>
+    <body>
+        <div id="page-wrap">
+        <div id="contenedor">  
+                <?php
+                    include('menu.php');
+                ?>
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+       </div>
+            <table border="0"  >
+                <thead>
+                    <tr>
+                        <th  height="200" ></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td height="50" width="250"></td>
+                        <td height="50" width="250">Valentin Santander<br> santander.valentin@gmail.com</td> 
+                        <td height="50" width="300"></td>
+                        <td height="50" width="300">Tommy Ivan Bergez Norambuena <br> tbergez@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            </div>
+        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
+   </body>
+</html>
+
 

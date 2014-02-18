@@ -15,7 +15,7 @@
           </li>
           <li><a href="acceso.php">Acceso Usuarios</a></li>
           <li2><a href="registrate.php">Registrate</a></li2>
-          <li2><a href="#">Contacto</a></li2>
+          <li2><a href="contacto.php">Contacto</a></li2>
 
           </ul>
 
