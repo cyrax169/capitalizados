@@ -12,17 +12,12 @@
         <div id="page-wrap">
         <div id="contenedor">  
                 <?php
-                    include('menu.php');
+                    include('menu_usuario.php');
                 ?>
 
        </div>
             <CENTER>
             <table  border="0">
-                <thead>
-                    <tr>
-                        <th></th>
-                    </tr>
-                </thead>
                 <tbody>
                     <tr ><td height="300" width="400"><table border="0" >
                                 <thead>
