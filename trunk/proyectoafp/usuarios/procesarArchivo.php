@@ -1,5 +1,5 @@
 <?php
-    $nombreAlmacenamiento = get_current_user()+mktime();
+  
     $destinoCartola = "../Cartolas/";
     opendir($destinoCartola);
     $origen = $_FILES['archivo']['tmp_name'];
