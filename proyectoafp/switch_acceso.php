@@ -31,7 +31,7 @@ switch ($opc)
           case '1': 
               $opcdir="<script>location.href='administrador/principal.php';</script>";
              break;
-          case '2': $opcdir="<script>location.href='usuarios/principal.php';</script>";
+          case '2': $opcdir="<script>location.href='usuarios/home.php';</script>";
                           break;
           
            }
