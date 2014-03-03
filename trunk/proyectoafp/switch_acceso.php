@@ -1,4 +1,8 @@
 <?php
+
+ session_start();
+$_SESSION['UsuarioActual']=$_REQUEST['usuario'];
+
 $usuario= $_POST['usuario'];
 $contrasena= $_POST['contrasena'];
 
