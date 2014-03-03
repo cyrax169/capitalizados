@@ -9,15 +9,38 @@ include("../conexion.php");
     $rut=$_SESSION['usuarioActual'];
     }
     $datos = mysqli_query($conn,"SELECT  * FROM cliente WHERE rut='$rut'");
-    
+   
    while($row2=mysqli_fetch_array($datos)){
        $nombre=$row2['nombres']; 
        $apellido=$row2['apellidos'];
        $fecha_nacimiento=$row2['fecha_nacimiento'];
        $region_residencia=$row2['region_residencia'];
+         $region = mysqli_query($conn,"SELECT * FROM regiones WHERE id=$region_residencia");
+          while($row3=mysqli_fetch_array($region)){
+         $region_residencia=$row3['nombre'];
+          }
        $genero=$row2['genero'];
        $afp=$row2['afp'];
+            $afp1 = mysqli_query($conn,"SELECT * FROM afp WHERE id='$afp'");
+            while($row4=mysqli_fetch_array($afp1)){
+            $afp=$row4['nombre'];
+          }
        $tipo_cliente=$row2['tipo_cliente'];
+       $telefono=$row2['telefono'];
+       $email=$row2['email'];
+       
+       if($tipo_cliente==1){
+          $tipo_cliente='Trabajador Activo'; 
+       }
+       if($tipo_cliente==2){
+          $tipo_cliente='Trabajador Jubilado'; 
+       }
+       if($genero==1){
+          $genero='Femenino'; 
+       }
+       if($genero==2){
+          $genero='Masculino'; 
+       }
    }
    
    mysqli_close($conn);
@@ -79,6 +102,14 @@ include("../conexion.php");
                     <tr>
                        <td height="38"><font color="#666666">Tipo Cliente</font></td>
                        <td><input type="text" name="tipo_cliente" value="<?php echo $tipo_cliente ?>"/></td>
+                   </tr>
+                    <tr>
+                       <td height="34"><font color="#666666">Email</font></td>
+                       <td><input type="text" name="email" value="<?php echo $email ?>"/></td>
+                   </tr>
+                   <tr>
+                       <td height="34"><font color="#666666">Telefono</font></td>
+                       <td><input type="text" name="telefono" value="<?php echo $telefono ?>"/></td>
                    </tr>
                    <tr>
                        <td height="38"><font color="#666666">Región de Residencia</font></td>
