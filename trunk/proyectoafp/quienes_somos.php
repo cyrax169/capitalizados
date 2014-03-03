@@ -2,7 +2,7 @@
     
     <head>
         <meta charset="UTF-8">
-        <title>Home</title>
+        <title>Quienes Somos</title>
          <?php
               include('header.php');
          ?>
@@ -59,7 +59,7 @@
                              </thead>
                              <tbody >
                                  <tr>
-                                     <td  height="160">
+                                     <td>
                                          Esperamos ser reconocidos como una empre-<br>
                                          sa de profesionales de excelencia, que asiste <br>
                                          técnicamente a los cotizantes del sistema de <br>
@@ -67,10 +67,9 @@
                                          funcion de nuestras sugerencias, los clientes <br>
                                          maximicen la rentabilidad de sus fondos y por <br>
                                          ende incrementen su patrimonio.<br> 
-                                         Nuestro compromiso permanente, es acompa- <br>
-                                         ñarlo en la búsqueda de mejores espectati- <br>
-                                         vas, en su calidad de vida futura al momen- <br>
-                                         to de pensionarse. <br>
+                                         Nuestro compromiso es acompañarlo en la bús- <br>
+                                         queda de mejores espectativas, en su calidad- <br>
+                                         de vida futura al momento de pensionarse.<br>
                                      </td>
                                      <td></td>
                                  </tr>
