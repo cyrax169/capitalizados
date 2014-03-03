@@ -23,7 +23,7 @@
                     </tr>
                 </thead>
                 <tbody align="center">
-                    <tr ><td height="300" width="350"><table border="0" align="center">
+                    <tr ><td height="300" width="350"><table border="0" align="center" bgcolor='#DFD5FF'>
                                 <thead>
                                     <tr>
                                         <th><font color="#CC0000"> Misión </font></th>
