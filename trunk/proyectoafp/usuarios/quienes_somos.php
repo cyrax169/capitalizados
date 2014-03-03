@@ -11,7 +11,7 @@
         <div id="page-wrap">
         <div id="contenedor">  
                 <?php
-                    include('menu.php');
+                    include('menu_usuario.php');
                 ?>
 
        </div>
@@ -38,16 +38,14 @@
                                             fondo, en función de la evolución de ellos du- <br>
                                             rante el año y eventuales cambios de AFP, de <br>
                                             acuerdo a la rentabilidad que entregan.<br> 
-                                            En la asesoria buscamos maximizar el patrimo- <br>
-                                            nio de nuestros clientes. Para ello nuestra <br>
-                                            Empresa diseña una estrategia activa de desi- <br>
-                                            ciones de inversiones, en función de las condi- <br>
-                                            ciones del mercado y su volatilidad, lo que <br>
-                                            permite a nuestros clientes mejorar las espec- <br>
-                                            tativas de su pension. <br> 
-                                            Nuestra area de influencia cubre la región del <br>
-                                            Maule y el país, otorgando el servicio en plata- <br>
-                                            forma web.<br>
+                                            En la asesoria buscamos maximizar el patrimonio <br>
+                                            de nuestros clientes. Para ello nuestra <br>
+                                            Empresa diseña una estrategia activa de desiciones <br>
+                                            de inversiones, en función de las condiciones <br>
+                                            del mercado y su volatilidad, lo que permite a nuestros<br>
+                                            clientes mejorar las espectativas de su pension.<br>
+                                            Nuestra area de influencia cubre la región del Maule<br>
+                                            y el país, otorgando el servicio en plataforma web. <br>
                                         </td>
                                     </tr>
                                     <tr>
@@ -60,13 +58,12 @@
                              <tbody >
                                  <tr>
                                      <td>
-                                         Esperamos ser reconocidos como una empre-<br>
-                                         sa de profesionales de excelencia, que asiste <br>
-                                         técnicamente a los cotizantes del sistema de <br>
-                                         cotización individual. Pretendemos que en <br>
-                                         funcion de nuestras sugerencias, los clientes <br>
-                                         maximicen la rentabilidad de sus fondos y por <br>
-                                         ende incrementen su patrimonio.<br> 
+                                         Esperamos ser reconocidos como una empresa<br>
+                                         de profesionales de excelencia, que asiste técni-<br>
+                                         camente a los cotizantes del sistema de cotización <br>
+                                         individual. Pretendemos que en funcion de nuestras <br>
+                                         sugerencias, los clientes maximicen la rentabilidad <br>
+                                         de sus fondos y por ende incrementen su patrimonio.<br>                                          
                                          Nuestro compromiso es acompañarlo en la bús- <br>
                                          queda de mejores espectativas, en su calidad- <br>
                                          de vida futura al momento de pensionarse.<br>
@@ -112,7 +109,7 @@
                                             Somos una empresa compuesta por <br>
                                             profesionales de vasta experiencia en <br>
                                             materias financieras, que han unido <br>
-                                            sus hablilidades y conocimeintos para <br>
+                                            sus hablilidades y conocimientos para <br>
                                             otorgar un servicio web a sus clientes.<br> 
                                             Dentro de su plana ejecutiva contamos <br>
                                             con Ingenieros Comerciales, Contado- <br>
