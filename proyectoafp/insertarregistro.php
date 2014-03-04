@@ -27,12 +27,43 @@ mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,
 mysqli_close($conn); 
 
 ?> 
-<HTML> 
-<HEAD> 
-<TITLE>Continuar con el Registro</TITLE> 
-</HEAD> 
-<BODY> 
-<h1><div align="center">Su registro se ha realizado con éxito</div></h1> 
-<div align="center"><a href="index.php">Volver al inicio</a></div> 
-</BODY> 
-</HTML> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Subir Cartola</title>
+         <?php
+              include('header.php');
+         ?>
+    </head>
+    
+    <body>
+        <div id="page-wrap">
+            <div id="contenedor">  
+                <?php
+                include('menu.php');
+                ?>
+            </div>
+            <CENTER>
+                <br><br>
+                <h2>Estás por completar tu registro</h2>
+                <form name="subirCartola" action="procesaCertificado.php.php" method="POST" enctype="multipart/form-data">
+                    <table border="1" heigh="200">
+                        <tbody align="center">
+                            <tr>
+                                <td>Busca tu Certificado</td>
+                                <td><input type="file" name="certificado" value="" width="20" /></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="submit" value="Subir Archivo" name="bSubir" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </CENTER>
+        </div>    
+        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div> 
+        
+    </body>
+    
+</html>
