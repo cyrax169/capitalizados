@@ -8,6 +8,16 @@
     $origen1 = $_FILES['certificado']['tmp_name'];
     $destino1 = $destinoCertificado.$nombreAlmacenamiento;
     copy($origen1, $destino1);    
+    
+    $user=$_SESSION['usuarioActual'];
+    include "conexion.php"; 
+    $conn = dbConnect();
+    if (mysqli_connect_errno()){
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+    $strSQL = "update cliente set certificado = '$nombreAlmacenamiento' where rut='$user';";
+    mysqli_query($conn,$strSQL);
+    mysqli_close($conn);
 ?>
 
 <html>
