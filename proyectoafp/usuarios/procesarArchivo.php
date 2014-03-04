@@ -6,14 +6,22 @@
  } // Recuerda usar corchetes
 
     $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".date("j"."-"."n"."-"."Y").".pdf"; 
-?>
 
-<?php
     $destinoCartola = "../Cartolas/";
     opendir($destinoCartola);
     $origen = $_FILES['archivo']['tmp_name'];
     $destino = $destinoCartola.$nombreAlmacenamiento;
     copy($origen, $destino);
+    
+    $user=$_SESSION['usuarioActual'];
+    include "../conexion.php"; 
+    $conn = dbConnect();
+    if (mysqli_connect_errno()){
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    }
+    $strSQL = "update cliente set cartola = '$nombreAlmacenamiento' where rut='$user';";
+    mysqli_query($conn,$strSQL);
+    mysqli_close($conn); 
 ?>
 
 <html>
