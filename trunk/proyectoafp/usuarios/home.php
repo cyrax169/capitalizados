@@ -23,36 +23,36 @@
                     </tr>
                 </thead>
                 <tbody align="center">
-                    <tr><td height="150" width="250"><table bgcolor='#DFD5FF' border="0" align="center">
+                    <tr><td width="300"><table bgcolor='#DFD5FF' border="0" align="center">
                                 <thead>
                                     <tr>
-                                        <th height="80"></th>
+                                        <th height="85"></th>
                                     </tr>
                                 </thead>
                                 <tbody align="center">
                                     <tr>
-                                        <td><font color="#CC0000"> Nuestra Propuesta</font><br>
+                                        <td height="30" width="300"><font color="#CC0000"> Nuestra Propuesta</font><br>
                                             <br>Maximizar la rentabilidad de tus <br>
                                             fondos a través de una estrategia <br>
                                             activa. <br><br>
                                         </td>
                                     </tr>
                                     <tr>
-                     <td height="160" ><table border="0" align="center">
+                     <td ><table border="0" align="center">
                              <thead>
                                  <tr>
-                                     <th></th>
+                                     <th ></th>
                                  </tr>
                              </thead>
                              <tbody align="center">
                                  <tr>
-                                     <td  height="100"><font color="#CC0000"> Nuestra Sugerencia</font> <br>
-                                          <br>Cambios frecuentes en multifondos <br>
+                                     <td  height="15"> <font color="#CC0000"> Nuestra Sugerencia</font><br>
+                                         <br>Cambios frecuentes en multifondos <br>
                                          con que puedes operar, cuando las <br>
                                          condiciones sean favorables.
                                          <br><br>
                                      </td>
-                                      <td  height="300"></td>
+                                     <td  height="300"></td>
                                  </tr>
                              </tbody>
                          </table>
@@ -61,7 +61,7 @@
                                 </tbody>
                             </table>
                         </td>
-                        <td height="300" width="380"><table border="0" align="center">
+                        <td height="300" width="330"><table border="0" align="center">
                                 <thead>
                                     <tr>
                                         <th></th>
@@ -74,7 +74,7 @@
                                 </tbody>
                             </table>
                         </td>
-                        <td height="430" width="280"><table border="0" align="center">
+                        <td height="350" width="280"><table border="0" align="center">
                                 <thead>
                                     <tr>
                                         <th></th>

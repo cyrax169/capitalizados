@@ -23,7 +23,7 @@
                     </tr>
                 </thead>
                 <tbody align="center">
-                    <tr><td width="250"><table bgcolor='#DFD5FF' border="0" align="center">
+                    <tr><td width="300"><table bgcolor='#DFD5FF' border="0" align="center">
                                 <thead>
                                     <tr>
                                         <th height="85"></th>
@@ -31,7 +31,7 @@
                                 </thead>
                                 <tbody align="center">
                                     <tr>
-                                        <td height="30" ><font color="#CC0000"> Nuestra Propuesta</font><br>
+                                        <td height="30" width="300"><font color="#CC0000"> Nuestra Propuesta</font><br>
                                             <br>Maximizar la rentabilidad de tus <br>
                                             fondos a través de una estrategia <br>
                                             activa. <br><br>
@@ -61,7 +61,7 @@
                                 </tbody>
                             </table>
                         </td>
-                        <td height="300" width="380"><table border="0" align="center">
+                        <td height="300" width="330"><table border="0" align="center">
                                 <thead>
                                     <tr>
                                         <th></th>
