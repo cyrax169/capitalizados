@@ -26,12 +26,12 @@
                     <tr><td height="150" width="250"><table bgcolor='#DFD5FF' border="0" align="center">
                                 <thead>
                                     <tr>
-                                        <th><font color="#CC0000"> Nuestra Propuesta</font></th>
+                                        <th height="80"></th>
                                     </tr>
                                 </thead>
                                 <tbody align="center">
                                     <tr>
-                                        <td>
+                                        <td><font color="#CC0000"> Nuestra Propuesta</font><br>
                                             <br>Maximizar la rentabilidad de tus <br>
                                             fondos a través de una estrategia <br>
                                             activa. <br><br>
@@ -41,18 +41,18 @@
                      <td height="160" ><table border="0" align="center">
                              <thead>
                                  <tr>
-                                     <th><font color="#CC0000"> Nuestra Sugerencia</font></th>
+                                     <th></th>
                                  </tr>
                              </thead>
                              <tbody align="center">
                                  <tr>
-                                     <td  height="100">
-                                         Cambios frecuentes en multifondos <br>
+                                     <td  height="100"><font color="#CC0000"> Nuestra Sugerencia</font> <br>
+                                          <br>Cambios frecuentes en multifondos <br>
                                          con que puedes operar, cuando las <br>
                                          condiciones sean favorables.
                                          <br><br>
                                      </td>
-                                     <td></td>
+                                      <td  height="300"></td>
                                  </tr>
                              </tbody>
                          </table>
