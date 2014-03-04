@@ -51,7 +51,13 @@ include("../conexion.php");
           $genero='Masculino'; 
        }
    }
-   
+    $ruta = mysqli_query($conn,"SELECT * FROM cliente WHERE rut='$rut'");
+          while($certificado=mysqli_fetch_array($ruta)){
+          $ruta_certificado=$certificado['certificado'];
+          $ruta_cartola=$certificado['cartola'];
+          }
+          $url="../Certificados/".$ruta_certificado;
+          $url_cartola="../Cartolas/".$ruta_cartola;
    mysqli_close($conn);
  ?>
 
@@ -134,6 +140,10 @@ include("../conexion.php");
                    <tr>
                        <td height="38"><font color="#666666">AFP en que se encuentra</font></td>
                        <td><input type="text" name="afp" value="<?php echo $afp ?>"/></td>
+                   </tr>
+                    <tr>
+                       <td height="38"><a href="<?php echo $url; ?>" target="_blank">Certificado Afiliación</a><br /></td>
+                       <td><a href="<?php echo $url_cartola; ?>" target="_blank">Ultima Cartola</a></td>
                    </tr>
                                     
                    
