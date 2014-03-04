@@ -14,7 +14,7 @@ body {
 #menuWrapper {
 width:100%; /* Ancho del men� */
 height:35px;
-padding-left:140px;
+padding-left:40px;
 /* background:#CC0000; Color de fondo */
 border-radius:5px; /* Bordes redondeados */
 }
