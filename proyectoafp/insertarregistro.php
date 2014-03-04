@@ -46,7 +46,7 @@ mysqli_close($conn);
             <CENTER>
                 <br><br>
                 <h2>Estás por completar tu registro</h2>
-                <form name="subirCartola" action="procesaCertificado.php.php" method="POST" enctype="multipart/form-data">
+                <form name="subirCartola" action="procesaCertificado.php" method="POST" enctype="multipart/form-data">
                     <table border="1" heigh="200">
                         <tbody align="center">
                             <tr>
