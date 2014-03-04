@@ -45,13 +45,16 @@ mysqli_close($conn);
             </div>
             <CENTER>
                 <br><br>
+                <br><br>
+                <br><br>
+                <br><br>
                 <h2>Estás por completar tu registro</h2>
                 <form name="subirCartola" action="procesaCertificado.php" method="POST" enctype="multipart/form-data">
                     <table border="1" >
                         <tbody align="center">
                             <tr>
                                 <td>Busca tu Certificado</td>
-                                <td><input type="file" name="certificado" value="" width="20" /></td>
+                                <td><input type="file" name="certificado" /></td>
                             </tr>
                             <tr>
                                 <td></td>
