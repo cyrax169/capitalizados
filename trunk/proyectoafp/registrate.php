@@ -22,6 +22,7 @@ include("conexion.php");
 <script type="text/javascript">
 function valida(f) {
   var ok = true;
+  cajita = document.getElementById("lic");
   var msg = "Debes escribir algo en los campos:\n";
   if(f.elements[0].value == ""){msg += "-rut\n";ok = false;}
   if(f.elements["nombre1"].value == ""){msg += "- nombre1\n";ok = false;}
@@ -32,8 +33,7 @@ function valida(f) {
   if(f.elements["tipo_cliente"].value == "0"){msg += "- tipo de cliente\n";ok = false;}
   if(f.elements["region_residencia"].value == "0"){msg += "- region de residencia\n";ok = false;}
   if(f.elements["afp"].value == "0"){msg += "- Nombre AFP\n";ok = false;}
-  if(f.elements["certificado"].value == ""){msg += "- Subir Certificado\n";ok = false;}
-  if(f.elements["cartola"].value == ""){msg += "- Subir Cartola\n";ok = false;}
+  if(cajita.checked==false){msg+="- Debe aceptar los términos y condiciones"; ok=false;}
   if(ok == false){alert(msg);}return ok;}
     </script>
     </head>
@@ -122,14 +122,9 @@ function valida(f) {
                     </select></td>
                    </tr>
                    <tr>
-                       <td height="30"><font color="#666666">Cartola Cuatrimestral</font></td>
-                       <td><input type="file" name="cartola" value="" /></td>
+                       <td height="30"><font color="#666666">Acepto Términos y Condiciones</font></td>
+                       <td><input type="checkbox" name="licencia" ID="lic" value="ok"/><a href="Documentos/cartaRecomendacionRMotz.pdf" target="_blank">Terminos y Condiciones</a></td>
                    </tr>
-                   <tr>
-                       <td height="30"><font color="#666666">Certificado Saldo Cuenta</font></td>
-                       <td><input type="file" value=""  name="certificado" /></td>
-                   </tr>
-                   <tr>
                        <td height="30"> </td>
                        <td><input type="submit" value="Registrar" name="registrar" style='width:170px; height:25px' /></td>
                    </tr>
