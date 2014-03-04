@@ -12,9 +12,8 @@
                 <?php
                     include('menu.php');
                 ?>
-
        </div>
-            <table border="0"  >
+           <table border="0"  >
                 <thead>
                     <tr>
                         <th  height="200" ></th>
