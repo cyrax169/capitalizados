@@ -2,7 +2,7 @@
     
     <head>
         <meta charset="UTF-8">
-        <title>Home</title>
+        <title>Nuestros Servicios</title>
          <?php
               include('header.php');
          ?>
@@ -27,45 +27,19 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                <li>POR QUÉ INCLINARSE POR NUESTRA ASESORÍA</li>
-                                <li>SERVICIOS OFRECIDOS</li>
-                                <li>BENEFICIOS ADICIONALES DE UNA ESTRATÉGIA ACTIVA</li>
-                                <li>PROCEDIMIENTO DE CÁLCULO DE LOS HONORARIOS DE LA ASESORÍA</li>
-                                <li>INFORMACIÓN RELEVANTE PARA LOS POTENCIALES CLIENTES</li>
+                                <li><a href="">POR QUÉ INCLINARSE POR NUESTRA ASESORÍA</a></li>
+                                <li><a href="">SERVICIOS OFRECIDOS</a></li>
+                                <li><a href="">BENEFICIOS ADICIONALES DE UNA ESTRATÉGIA ACTIVA</a></li>
+                                <li><a href="">PROCEDIMIENTO DE CÁLCULO DE LOS HONORARIOS DE LA ASESORÍA</a></li>
+                                <li><a href="">INFORMACIÓN RELEVANTE PARA LOS POTENCIALES CLIENTES</a></li>
                                         </td>
                                     </tr>
                                     <tr>
-                     <td height="160"><table border="0" align="center">
-                             <thead>
-                                 <tr>
-                                     <th><font color="#CC0000">  Visión </font></th>
-                                 </tr>
-                             </thead>
-                             <tbody >
-                                 <tr>
-                                     <td  height="160">
-                                         Esperamos ser reconocidos como una empre-<br>
-                                         sa de profesionales de excelencia, que asiste <br>
-                                         técnicamente a los cotizantes del sistema de <br>
-                                         cotización individual. Pretendemos que en <br>
-                                         funcion de nuestras sugerencias, los clientes <br>
-                                         maximicen la rentabilidad de sus fondos y por <br>
-                                         ende incrementen su patrimonio.<br> 
-                                         Nuestro compromiso permanente, es acompa- <br>
-                                         ñarlo en la búsqueda de mejores espectati- <br>
-                                         vas, en su calidad de vida futura al momen- <br>
-                                         to de pensionarse. <br>
-                                     </td>
-                                     <td></td>
-                                 </tr>
-                             </tbody>
-                         </table>
-                     </td>
                      </tr>
                                 </tbody>
                             </table>
                         </td>
-                        <td height="400" width="280"><table align="center" border="0">
+                        <td height="300" width="380"><table border="0" align="center">
                                 <thead>
                                     <tr>
                                         <th></th>
@@ -73,10 +47,7 @@
                                 </thead>
                                 <tbody align="center">
                                     <tr>
-                                        <td height="200"><img src="../imagenes/imagen4.png" border="0" width="230" height="230" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td height="300" ><img src="../imagenes/imagen5.png" border="0" width="230" height="230" /></td>
+                                        <td height="100"><img src="../imagenes/imagen7.png" border="0" width="300" height="300" align="center"/></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -84,26 +55,34 @@
                         <td height="300" width="300"><table align="center" border="0">
                                 <thead>
                                     <tr>
-                                        <th><font color="#CC0000"> Nuestro equipo </font></th>
+                                        <th><font color="#CC0000"> BENEFICIOS ADICIONALES DE UNA</font></th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th><font color="#CC0000"> ESTRATÉGIA ACTIVA</font></th>
                                         
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td height="230" align="center"><img src="../imagenes/imagen6.png" border="0" width="200" height="200" /></td>
-                                    </tr>
+                                <tbody>                                                                    
                                     <tr>
                                         <td height="230">
-                                            Somos una empresa compuesta por <br>
-                                            profesionales de vasta experiencia en <br>
-                                            materias financieras, que han unido <br>
-                                            sus hablilidades y conocimeintos para <br>
-                                            otorgar un servicio web a sus clientes.<br> 
-                                            Dentro de su plana ejecutiva contamos <br>
-                                            con Ingenieros Comerciales, Contado- <br>
-                                            res Públicos y Auditores, Ingeniero In- <br>
-                                            dustrial, que adicionalmente disponen <br>
-                                            de grados de Magister y Doctor. <br>
+                                            Obtendrá la oportunidad de generar una <br>
+                                            mayor rentabilidad de sus ahorros persona- <br>
+                                            les, si decide mantenerlos en la cuenta de <br>
+                                            ahorro voluntario o en la cuenta APV, <br>
+                                            aprovechando a la vez los beneficios tributa- <br>
+                                            rios que tienen cada uno de estos fondos. <br><br>
+                                            ¿Por qué?<br><br>
+                                            Podrá mejorar su pensión por las mayo-<br>
+                                            res rentabilidades obtenidas, y a futuro,<br>
+                                            dependiendo de los montos acumulados,<br>
+                                            eventualmente podrá retirar dinero en efec-<br>
+                                            tivo, como excedente de libre disposición, al<br>
+                                            minuto de su jubilación.<br><br> 
+                                            Generar la conciencia de los usuarios que <br>
+                                            si se preocupan hoy de su fondo de capitaliza-<br>
+                                            ción, lo más probable es que puedan gozar <br>
+                                            de una mejor pensión en su futuro.<br>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -116,7 +95,7 @@
             </table>
 </CENTER>
             </div>
-        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
+        <div id="footer"> <a href=""><img src="../imagenes/footer.png" /></a></div>
    </body>
    
 </html>

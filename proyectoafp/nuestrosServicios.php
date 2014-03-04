@@ -2,7 +2,7 @@
     
     <head>
         <meta charset="UTF-8">
-        <title>Home</title>
+        <title>Nuestros Servicios</title>
          <?php
               include('header.php');
          ?>
@@ -55,26 +55,34 @@
                         <td height="300" width="300"><table align="center" border="0">
                                 <thead>
                                     <tr>
-                                        <th><font color="#CC0000"> Nuestro equipo </font></th>
+                                        <th><font color="#CC0000"> BENEFICIOS ADICIONALES DE UNA</font></th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th><font color="#CC0000"> ESTRATÉGIA ACTIVA</font></th>
                                         
                                     </tr>
                                 </thead>
-                                <tbody>
-                                    <tr>
-                                        <td height="230" align="center"><img src="../imagenes/imagen6.png" border="0" width="200" height="200" /></td>
-                                    </tr>
+                                <tbody>                                                                    
                                     <tr>
                                         <td height="230">
-                                            Somos una empresa compuesta por <br>
-                                            profesionales de vasta experiencia en <br>
-                                            materias financieras, que han unido <br>
-                                            sus hablilidades y conocimeintos para <br>
-                                            otorgar un servicio web a sus clientes.<br> 
-                                            Dentro de su plana ejecutiva contamos <br>
-                                            con Ingenieros Comerciales, Contado- <br>
-                                            res Públicos y Auditores, Ingeniero In- <br>
-                                            dustrial, que adicionalmente disponen <br>
-                                            de grados de Magister y Doctor. <br>
+                                            Obtendrá la oportunidad de generar una <br>
+                                            mayor rentabilidad de sus ahorros persona- <br>
+                                            les, si decide mantenerlos en la cuenta de <br>
+                                            ahorro voluntario o en la cuenta APV, <br>
+                                            aprovechando a la vez los beneficios tributa- <br>
+                                            rios que tienen cada uno de estos fondos. <br><br>
+                                            ¿Por qué?<br><br>
+                                            Podrá mejorar su pensión por las mayo-<br>
+                                            res rentabilidades obtenidas, y a futuro,<br>
+                                            dependiendo de los montos acumulados,<br>
+                                            eventualmente podrá retirar dinero en efec-<br>
+                                            tivo, como excedente de libre disposición, al<br>
+                                            minuto de su jubilación.<br><br> 
+                                            Generar la conciencia de los usuarios que <br>
+                                            si se preocupan hoy de su fondo de capitaliza-<br>
+                                            ción, lo más probable es que puedan gozar <br>
+                                            de una mejor pensión en su futuro.<br>
                                         </td>
                                     </tr>
                                 </tbody>
