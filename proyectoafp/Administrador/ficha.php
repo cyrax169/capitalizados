@@ -1,4 +1,13 @@
 <?php
+ /* Empezamos la sesión */
+ @session_start();
+
+ /* Si no hay una sesión creada, redireccionar al index. */
+ if(empty($_SESSION['usuarioActual'])) { // Recuerda usar corchetes.
+ header('Location: ../index.php');
+ } // Recuerda usar corchetes
+?>
+<?php
 include("../conexion.php");
    // $result = "";
     $conn = dbConnect();
