@@ -15,10 +15,6 @@
                 ?>
             </div>
             <CENTER>
-                <?php @session_start();
-                $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".date("j"."-"."n"."-"."Y"); 
-                echo $nombreAlmacenamiento."\n".$_SESSION['usuarioActual']."\nasd";
-                ?>
                 <form name="subirCartola" action="procesarArchivo.php" method="POST" enctype="multipart/form-data">
                     <table border="1">
                         <tbody align="center">

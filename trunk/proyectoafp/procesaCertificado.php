@@ -1,8 +1,12 @@
+<?php @session_start();
+    $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".date("j"."-"."n"."-"."Y").".pdf"; 
+?>
+
 <?php
     $destinoCertificado = "Certificados/";
     opendir($destinoCertificado);
     $origen1 = $_FILES['certificado']['tmp_name'];
-    $destino1 = $destinoCertificado.$_FILES['certificado']['name'];
+    $destino1 = $destinoCertificado.$nombreAlmacenamiento;
     copy($origen1, $destino1);    
 ?>
 

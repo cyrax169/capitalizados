@@ -1,8 +1,12 @@
+<?php @session_start();
+    $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".date("j"."-"."n"."-"."Y").".pdf"; 
+?>
+
 <?php
     $destinoCartola = "../Cartolas/";
     opendir($destinoCartola);
     $origen = $_FILES['archivo']['tmp_name'];
-    $destino = $destinoCartola.$_FILES['archivo']['name'];
+    $destino = $destinoCartola.$nombreAlmacenamiento;
     copy($origen, $destino);
 ?>
 
