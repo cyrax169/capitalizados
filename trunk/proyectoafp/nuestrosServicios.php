@@ -23,15 +23,17 @@
                     </tr>
                 </thead>
                 <tbody align="center">
-                    <tr ><td height="300" width="350"><table border="0" align="center" bgcolor='#DFD5FF'>
+                    <tr ><td height="300" width="290"><table border="0" align="center" bgcolor='#DFD5FF'>
                                 <tbody>
                                     <tr>
-                                        <td>
-                                <li><a href="">POR QUÉ INCLINARSE POR NUESTRA ASESORÍA</a></li>
-                                <li><a href="">SERVICIOS OFRECIDOS</a></li>
-                                <li><a href="">BENEFICIOS ADICIONALES DE UNA ESTRATÉGIA ACTIVA</a></li>
-                                <li><a href="">PROCEDIMIENTO DE CÁLCULO DE LOS HONORARIOS DE LA ASESORÍA</a></li>
-                                <li><a href="">INFORMACIÓN RELEVANTE PARA LOS POTENCIALES CLIENTES</a></li>
+                                        <td height="500" >
+                                <ul  style="list-style-position: outside">
+                                    <li style="height: 50px"><a href="" style="font-size: 12"> POR QUÉ INCLINARSE POR NUESTRA ASESORÍA </a></li>
+                                <li style="height: 50px"><a href="" style="font-size: 12"> SERVICIOS OFRECIDOS</a></li>
+                                <li style="height: 50px"><a href="" style="font-size: 12"> BENEFICIOS ADICIONALES DE UNA ESTRATÉGIA ACTIVA</a></li>
+                                <li style="height: 50px"><a href="" style="font-size: 12">PROCEDIMIENTO DE CÁLCULO DE LOS HONORARIOS DE LA ASESORÍA</a></li>
+                                <li style="height: 50px"><a href="" style="font-size: 12"> INFORMACIÓN RELEVANTE PARA LOS POTENCIALES CLIENTES</a></li>
+                                </ul>
                                         </td>
                                     </tr>
                                     <tr>
@@ -39,7 +41,7 @@
                                 </tbody>
                             </table>
                         </td>
-                        <td height="300" width="380"><table border="0" align="center">
+                        <td height="300" width="300"><table border="0" align="center">
                                 <thead>
                                     <tr>
                                         <th></th>
