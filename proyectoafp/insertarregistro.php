@@ -29,7 +29,7 @@ mysqli_close($conn);
 ?> 
 <HTML> 
 <HEAD> 
-<TITLE>Registrado</TITLE> 
+<TITLE>Continuar con el Registro</TITLE> 
 </HEAD> 
 <BODY> 
 <h1><div align="center">Su registro se ha realizado con éxito</div></h1> 
