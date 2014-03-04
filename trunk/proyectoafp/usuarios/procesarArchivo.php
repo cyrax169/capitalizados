@@ -1,10 +1,15 @@
 <?php
-  
     $destinoCartola = "../Cartolas/";
     opendir($destinoCartola);
     $origen = $_FILES['archivo']['tmp_name'];
     $destino = $destinoCartola.$_FILES['archivo']['name'];
     copy($origen, $destino);
+    
+    $destinoCertificado = "../Certificados/";
+    opendir($destinoCertificado);
+    $origen1 = $_FILES['archivo']['tmp_name'];
+    $destino1 = $destinoCertificado.$_FILES['archivo']['name'];
+    copy($origen1, $destino1);
 ?>
 
 <html>
