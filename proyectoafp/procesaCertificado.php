@@ -1,8 +1,8 @@
 <?php
-    $destinoCertificado = "../Certificados/";
+    $destinoCertificado = "Certificados/";
     opendir($destinoCertificado);
-    $origen1 = $_FILES['archivo']['tmp_name'];
-    $destino1 = $destinoCertificado.$_FILES['archivo']['name'];
+    $origen1 = $_FILES['certificado']['tmp_name'];
+    $destino1 = $destinoCertificado.$_FILES['certificado']['name'];
     copy($origen1, $destino1);    
 ?>
 
@@ -18,15 +18,15 @@
         <div id="page-wrap">
             <div id="contenedor">  
                 <?php
-                include('menu_usuario.php');
+                include('menu.php');
                 ?>
             </div> 
            <div>
-                <?php
-                    echo "Su Registro ha sido completado. Certificado subido Exitosamente";
-                ?>
+               <br><br><br>
+               <h3>Su Registro ha sido completado. <br>Certificado subido Exitosamente. </h3>
+                
             </div>
         </div>
-        <div id="footer"> <a href=""><img src="../imagenes/footer.png" /></a></div>
+        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
     </body>
 </html>
