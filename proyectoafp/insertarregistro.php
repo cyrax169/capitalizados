@@ -23,7 +23,7 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,tipo_cliente,email,telefono,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$tipo_cliente','$email',$telefono,'$genero','$afp','$cartola','$certificado');");
+mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,tipo_cliente,email,telefono,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$tipo_cliente','$email',$telefono,'$genero','$afp');");
 mysqli_close($conn); 
 
 ?> 
@@ -47,7 +47,7 @@ mysqli_close($conn);
                 <br><br>
                 <h2>Estás por completar tu registro</h2>
                 <form name="subirCartola" action="procesaCertificado.php" method="POST" enctype="multipart/form-data">
-                    <table border="1" heigh="200">
+                    <table border="1" >
                         <tbody align="center">
                             <tr>
                                 <td>Busca tu Certificado</td>
