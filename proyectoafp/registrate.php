@@ -123,7 +123,7 @@ function valida(f) {
                    </tr>
                    <tr>
                        <td height="30"><font color="#666666">Acepto Términos y Condiciones</font></td>
-                       <td><input type="checkbox" name="licencia" ID="lic" value="ok"/><a href="Documentos/cartaRecomendacionRMotz.pdf" target="_blank">Terminos y Condiciones</a></td>
+                       <td><input type="checkbox" name="licencia" ID="lic" value="ok"/><a href="Documentos/contrato.doc" target="_blank">Terminos y Condiciones</a></td>
                    </tr>
                        <td height="30"> </td>
                        <td><input type="submit" value="Registrar" name="registrar" style='width:170px; height:25px' /></td>
