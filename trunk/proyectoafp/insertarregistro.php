@@ -11,11 +11,10 @@ $afp=$_POST['afp'];
 $telefono=$_POST['telefono'];
 $email=$_POST['email'];
 $tipo_cliente=$_POST['tipo_cliente'];
-$cartola=$_POST['cartola'];
-$certificado=$_POST['certificado'];
 $nombres=$nombre1 .' '. $nombre2;
 $apellidos=$apellido1 .' '. $apellido2;
-echo $tipo_cliente,$email,$rut,$telefono,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,$cartola,$certificado;
+$licencia = $_POST['licencia'];
+//echo $tipo_cliente,$email,$rut,$telefono,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,$cartola,$certificado;
 
 include "conexion.php"; 
 $conn = dbConnect();
@@ -26,15 +25,6 @@ if (mysqli_connect_errno())
 
 mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,tipo_cliente,email,telefono,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$tipo_cliente','$email',$telefono,'$genero','$afp','$cartola','$certificado');");
 mysqli_close($conn); 
-
-$destinoCartola = "Cartolas";
-opendir($destinoCartola);
-$origen1 = $_FILES['cartola']['tmp_name'];
-$destino1 = $destinoCartola.$_FILES['cartola']['name'];
-copy($origen1, $destino1);
-$origen2 = $_FILES['certificado']['tmp_name'];
-$destino2 = $destinoCartola.$_FILES['certificado']['name'];
-copy($origen2, $destino2);
 
 ?> 
 <HTML> 
