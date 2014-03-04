@@ -15,7 +15,7 @@
                 ?>
             </div>
             <CENTER>
-                <?php  session_start();
+                <?php @session_start();
                 $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".date("j"."-"."n"."-"."Y"); 
                 echo $nombreAlmacenamiento."\n".$_SESSION['usuarioActual']."\nasd";
                 ?>
