@@ -80,11 +80,7 @@ include("../conexion.php");
            <a href="menu.php">Salir</a>
        </div>
   <table border="0" >
-                <thead>
-                    <tr>
-                        <th></th>
-                    </tr>
-                </thead>
+                
                  <tbody>
                     <tr>
                          <td height="350" width="500"></td>
@@ -94,31 +90,31 @@ include("../conexion.php");
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
                    <tr>
-                       <th height="65"><font color="#CC0000">Datos de identificación</font></th>
+                       <th height="59"><font color="#CC0000">Datos de identificación</font></th>
                        <th></th>
                    </tr>
                </thead>
                <tbody>
                    <tr>
-                       <td  height="38"><font color="#666666">Rut<nt/fo></td>
+                       <td  height="36"><font color="#666666">Rut<nt/fo></td>
                        <td><input type="text" name="rut" value="<?php echo $rut  ?>" maxlength="10"/><font color="#666666"></font></td>
                        
                    </tr>
                    
                    <tr>
-                       <td height="38"><font color="#666666">Nombres</font></td>
+                       <td height="36"><font color="#666666">Nombres</font></td>
                        <td><input type="text" name="nombre1" value="<?php echo $nombre  ?>"/></td>
                    </tr>
                    <tr>
-                       <td height="38"><font color="#666666">Apellidos</font></td>
+                       <td height="36"><font color="#666666">Apellidos</font></td>
                        <td><input type="text" name="apellido1" value="<?php echo $apellido ?>"/></td>
                    </tr>
                    <tr>
-                       <td height="38"><font color="#666666">Fecha nacimiento</font></td>
+                       <td height="36"><font color="#666666">Fecha nacimiento</font></td>
                        <td><input type="text" name="fecha_nacimiento" value="<?php echo $fecha_nacimiento ?>"/></td>
                    </tr>
                     <tr>
-                       <td height="38"><font color="#666666">Tipo Cliente</font></td>
+                       <td height="36"><font color="#666666">Tipo Cliente</font></td>
                        <td><input type="text" name="tipo_cliente" value="<?php echo $tipo_cliente ?>"/></td>
                    </tr>
                     <tr>
@@ -130,19 +126,19 @@ include("../conexion.php");
                        <td><input type="text" name="telefono" value="<?php echo $telefono ?>"/></td>
                    </tr>
                    <tr>
-                       <td height="38"><font color="#666666">Región de Residencia</font></td>
+                       <td height="36"><font color="#666666">Región de Residencia</font></td>
                        <td><input type="text" name="region_residencia" value="<?php echo $region_residencia ?>"/></td>
                    </tr>
                    <tr>
-                       <td height="38"><font color="#666666">Genero</font></td>
+                       <td height="36"><font color="#666666">Genero</font></td>
                        <td><input type="text" name="genero" value="<?php echo $genero ?>"/> </td>    
                    </tr>
                    <tr>
-                       <td height="38"><font color="#666666">AFP en que se encuentra</font></td>
+                       <td height="34"><font color="#666666">AFP en que se encuentra</font></td>
                        <td><input type="text" name="afp" value="<?php echo $afp ?>"/></td>
                    </tr>
                     <tr>
-                       <td height="38"><a href="<?php echo $url; ?>" target="_blank">Certificado Afiliación</a><br /></td>
+                       <td height="33"><a href="<?php echo $url; ?>" target="_blank">Certificado Afiliación</a><br /></td>
                        <td><a href="<?php echo $url_cartola; ?>" target="_blank">Ultima Cartola</a></td>
                    </tr>
                                     
