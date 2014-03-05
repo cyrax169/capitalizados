@@ -56,25 +56,7 @@ mysqli_close($conn);
                                 <td>Busca tu Certificado</td>
                                 <td><input type="file" name="certificado" /></td>
                             </tr>
-                            <tr>
-                                <td>Selecciona Cuatrimestre</td>
-                                <td><select name="cuatrimestre">
-                                        <option value="0">Seleccione</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select></td>
-                            </tr>
-                            <tr>
-                                <td>Selecciona Año</td>
-                                <td><select name="anio" id="anio">
-                                    <?php
-					for($anio=(date("Y")); 2013<=$anio; $anio--) {
-                                        echo "<option value=".$anio.">".$anio."</option>";
-						}
-                                    ?></select>
-                                </td>
-                            </tr>
+                            
                             <tr>
                                 <td></td>
                                 <td><input type="submit" value="Subir Archivo" name="bSubir" /></td>

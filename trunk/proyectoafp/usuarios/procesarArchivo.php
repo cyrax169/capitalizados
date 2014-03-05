@@ -4,8 +4,9 @@
  if(empty($_SESSION['usuarioActual'])) { // Recuerda usar corchetes.
  header('Location: ../index.php');
  } // Recuerda usar corchetes
-
-    $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".date("j"."-"."n"."-"."Y").".pdf"; 
+$cuatrimestre=$_POST['cuatrimestre'];
+$anio=$_POST['anio'];
+    $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".$cuatrimestre."_".$anio.".pdf"; 
 
     $destinoCartola = "../Cartolas/";
     opendir($destinoCartola);
