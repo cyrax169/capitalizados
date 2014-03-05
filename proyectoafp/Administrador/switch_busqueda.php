@@ -10,11 +10,11 @@ switch ($buscar)
                           break;
           case '2' : $opcdir="<script>location.href='../administrador/Busca_nombre.php';</script>";
              break;
-          case '3' : $opcdir="<script>location.href='../administrador/Busca_rut.php';</script>";
+          case '3' : $opcdir="<script>location.href='../administrador/Busca_edad.php';</script>";
              break;
-          case '4' : $opcdir="<script>location.href='../administrador/Busca_rut.php';</script>";
+          case '4' : $opcdir="<script>location.href='../administrador/Busca_afp.php';</script>";
              break;
-          case '5' : $opcdir="<script>location.href='../administrador/Busca_rut.php';</script>";
+          case '5' : $opcdir="<script>location.href='../administrador/Busca_tipo_cliente.php';</script>";
              break;
            }
 echo $opcdir;
