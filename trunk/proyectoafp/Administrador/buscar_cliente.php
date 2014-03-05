@@ -61,7 +61,7 @@ include("../conexion.php");
                                <option VALUE="2">Nombre</option>
                                <option VALUE="3">Edad</option>
                                <option VALUE="4">AFP</option>
-                               <option VALUE="2">Tipo cliente</option>                               
+                               <option VALUE="5">Tipo cliente</option>                               
                            </select></td>
                    </tr>
                     
