@@ -15,7 +15,8 @@ $nombres=$nombre1 .' '. $nombre2;
 $apellidos=$apellido1 .' '. $apellido2;
 $licencia = $_POST['licencia'];
 //echo $tipo_cliente,$email,$rut,$telefono,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,$cartola,$certificado;
-
+@session_start();
+$_SESSION['usuariorut']=$rut;
 include "conexion.php"; 
 $conn = dbConnect();
 if (mysqli_connect_errno())

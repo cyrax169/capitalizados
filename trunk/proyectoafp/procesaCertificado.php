@@ -1,5 +1,5 @@
 <?php @session_start();
-    $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".date("j"."-"."n"."-"."Y").".pdf"; 
+    $nombreAlmacenamiento = $_SESSION['usuariorut']."_".date("j"."-"."n"."-"."Y").".pdf"; 
 ?>
 
 <?php
@@ -9,7 +9,7 @@
     $destino1 = $destinoCertificado.$nombreAlmacenamiento;
     copy($origen1, $destino1);    
     
-    $user=$_SESSION['usuarioActual'];
+    $user=$_SESSION['usuariorut'];
     include "conexion.php"; 
     $conn = dbConnect();
     if (mysqli_connect_errno()){
