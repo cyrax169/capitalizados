@@ -140,6 +140,7 @@ function valida(f) {
 
       </div>
               </div>
-        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
+      
    </body>
+     <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>
 </html>
