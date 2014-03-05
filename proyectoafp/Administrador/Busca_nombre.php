@@ -48,9 +48,9 @@ include("../conexion.php");
                        <td height="38"><font color="#666666">seleccione nombre</font></td>
                        <td><select name="nombre_seleccionado">
                                <OPTION VALUE="0">Seleccione Nombre</OPTION>
-                        <?php        $result2 = mysqli_query($conn,"SELECT  rut, nombres FROM cliente");
+                        <?php        $result2 = mysqli_query($conn,"SELECT  rut, nombres, apellidos FROM cliente ORDER BY nombres ASC");
                         
-                             while ($row2=mysqli_fetch_array($result2)){?> <OPTION VALUE="<?php echo $row2['rut'] ?>"><?php echo $row2['nombres'] ?></OPTION><?php } ?> 
+                             while ($row2=mysqli_fetch_array($result2)){ $nombre_apellido=$row2['nombres']." ".$row2['apellidos']?> <OPTION VALUE="<?php echo $row2['rut'] ?>"><?php echo strtoupper($nombre_apellido) ?></OPTION><?php } ?> 
                     </select></td>
                    </tr>
                     
