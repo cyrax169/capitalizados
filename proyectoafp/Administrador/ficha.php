@@ -101,45 +101,45 @@ include("../conexion.php");
                <tbody>
                    <tr>
                        <td  height="38"><font color="#666666">Rut<nt/fo></td>
-                       <td><input type="text" name="rut" value="<?php echo $rut  ?>" maxlength="10"/><font color="#666666"></font></td>
+                       <td><input type="text" name="rut" size="40" value="<?php echo $rut  ?>" maxlength="10" readonly="readonly" /><font color="#666666"></font></td>
                        
                    </tr>
                    
                    <tr>
                        <td height="38"><font color="#666666">Nombres</font></td>
-                       <td><input type="text" name="nombre1" value="<?php echo strtoupper($nombre)  ?>"/></td>
+                       <td><input type="text" name="nombre1" size="40" value="<?php echo strtoupper($nombre)  ?>" readonly="readonly" /></td>
                    </tr>
                    <tr>
                        <td height="38"><font color="#666666">Apellidos</font></td>
-                       <td><input type="text" name="apellido1" value="<?php echo strtoupper($apellido) ?>"/></td>
+                       <td><input type="text" name="apellido1" size="40" value="<?php echo strtoupper($apellido) ?> " readonly="readonly" /></td>
                    </tr>
                    <tr>
                        <td height="38"><font color="#666666">Fecha nacimiento</font></td>
-                       <td><input type="text" name="fecha_nacimiento" value="<?php echo $fecha_nacimiento ?>"/></td>
+                       <td><input type="text" name="fecha_nacimiento" size="40" value="<?php echo $fecha_nacimiento ?>" readonly="readonly" /></td>
                    </tr>
                     <tr>
                        <td height="38"><font color="#666666">Tipo Cliente</font></td>
-                       <td><input type="text" name="tipo_cliente" value="<?php echo strtoupper($tipo_cliente) ?>"/></td>
+                       <td><input type="text" name="tipo_cliente" size="40" value="<?php echo strtoupper($tipo_cliente) ?>" readonly="readonly" /></td>
                    </tr>
                    <tr>
                        <td height="34"><font color="#666666">Email</font></td>
-                       <td><input type="text" name="email" value="<?php echo strtoupper($email) ?>"/></td>
+                       <td><input type="text" name="email" size="40" value="<?php echo strtoupper($email) ?>" readonly="readonly" /></td>
                    </tr>
                    <tr>
                        <td height="34"><font color="#666666">Telefono</font></td>
-                       <td><input type="text" name="telefono" value="<?php echo $telefono ?>"/></td>
+                       <td><input type="text" name="telefono" size="40" value="<?php echo $telefono ?>" readonly="readonly"  /></td>
                    </tr>
                    <tr>
                        <td height="38"><font color="#666666">Región de Residencia</font></td>
-                       <td><input type="text" name="region_residencia" value="<?php echo strtoupper($region_residencia) ?>"/></td>
+                       <td><input type="text" name="region_residencia" size="40" value="<?php echo strtoupper($region_residencia) ?>" readonly="readonly" /></td>
                    </tr>
                    <tr>
                        <td height="38"><font color="#666666">Genero</font></td>
-                       <td><input type="text" name="genero" value="<?php echo strtoupper($genero) ?>"/> </td>    
+                       <td><input type="text" name="genero" size="40" value="<?php echo strtoupper($genero) ?>" readonly="readonly" /> </td>    
                    </tr>
                    <tr>
                        <td height="38"><font color="#666666">AFP en que se encuentra</font></td>
-                       <td><input type="text" name="afp" value="<?php echo strtoupper($afp) ?>"/></td>
+                       <td><input type="text" name="afp" size="40" value="<?php echo strtoupper($afp) ?>" readonly="readonly" /></td>
                    </tr>
                    <tr>
                        <td height="38"><a href="<?php echo $url; ?>" target="_blank">Certificado Afiliación</a><br /></td>
