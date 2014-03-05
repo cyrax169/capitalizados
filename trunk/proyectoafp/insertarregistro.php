@@ -27,6 +27,8 @@ mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,
 mysqli_close($conn); 
 
 ?> 
+
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -46,8 +48,6 @@ mysqli_close($conn);
             <CENTER>
                 <br><br>
                 <br><br>
-                <br><br>
-                <br><br>
                 <h2>Estás por completar tu registro</h2>
                 <form name="subirCartola" action="procesaCertificado.php" method="POST" enctype="multipart/form-data">
                     <table border="1" >
@@ -55,6 +55,25 @@ mysqli_close($conn);
                             <tr>
                                 <td>Busca tu Certificado</td>
                                 <td><input type="file" name="certificado" /></td>
+                            </tr>
+                            <tr>
+                                <td>Selecciona Cuatrimestre</td>
+                                <td><select name="cuatrimestre">
+                                        <option value="0">Seleccione</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select></td>
+                            </tr>
+                            <tr>
+                                <td>Selecciona Año</td>
+                                <td><select name="anio" id="anio">
+                                    <?php
+					for($anio=(date("Y")); 2013<=$anio; $anio--) {
+                                        echo "<option value=".$anio.">".$anio."</option>";
+						}
+                                    ?></select>
+                                </td>
                             </tr>
                             <tr>
                                 <td></td>
@@ -65,8 +84,6 @@ mysqli_close($conn);
                 </form>
             </CENTER>
         </div>    
-        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div> 
-        
     </body>
-    
+        <div id="footer"> <a href=""><img src="imagenes/footer.png" /></a></div>     
 </html>
