@@ -19,19 +19,7 @@ include("conexion.php");
          <?php
               include('header.php');
          ?>
-<script type="text/javascript">
 
-function soloLetras(e) {
-    key = e.keyCode || e.which;
-    tecla = String.fromCharCode(key).toLowerCase();
-    letras = " ABCDEFGHIJKLMNÑOPQRSTUVWXYZabcdefghijklmnñopqrstuvwxyz";
-  
-        if(letras.indexOf(tecla) == -1){
-         return false;
-        }
-   
-}
-    </script>
     </head>
     <body>
          <div id="page-wrap">
@@ -40,6 +28,7 @@ function soloLetras(e) {
                   echo '<script type="text/javascript">';
                     include('js/valida.js');
                     include('js/solonumeros.js'); 
+                    include('js/soloLetras.js'); 
                 echo '</script>';
                     include('menu.php');
                 ?>
