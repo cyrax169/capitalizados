@@ -1,12 +1,19 @@
 <?php
  /* Empezamos la sesión */
  @session_start();
-
+ 
  /* Si no hay una sesión creada, redireccionar al index. */
  if(empty($_SESSION['usuarioActual'])) { // Recuerda usar corchetes.
  header('Location: ../index.php');
  } // Recuerda usar corchetes
-?>
+ if($_SESSION['Usuariotipo']== '2') {
+      header('Location: ../index.php');
+ } // Recuerda usar corchetes
+ 
+echo $_SESSION['Usuariotipo'];
+
+
+        ?>
 <html>
     
     <head>

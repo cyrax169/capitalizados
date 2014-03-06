@@ -3,7 +3,17 @@ include("../conexion.php");
    // $result = "";
     $conn = dbConnect();
     //$combobox;
-
+ @session_start();
+ 
+     if(empty($_SESSION['usuarioActual'])) { // Recuerda usar corchetes.
+ header('Location: ../index.php');
+ } // Recuerda usar corchetes
+ 
+  if($_SESSION['Usuariotipo']== '2') {
+      header('Location: ../index.php');
+ } // Recuerda usar corchetes
+    
+    
  ?>
 
 <html>
