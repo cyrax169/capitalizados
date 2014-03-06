@@ -20,6 +20,15 @@ include("conexion.php");
               include('header.php');
          ?>
 <script type="text/javascript">
+    function justNumbers(e)
+        {
+        var keynum = window.event ? window.event.keyCode : e.which;
+        if ((keynum == 8) || (keynum == 45))
+        return true;
+         
+        return /\d/.test(String.fromCharCode(keynum));
+        }
+        
 function valida(f) {
   var ok = true;
   cajita = document.getElementById("lic");
@@ -66,7 +75,7 @@ function valida(f) {
                <tbody>
                    <tr>
                        <td  height="34"><font color="#666666">Rut<font/></td>
-                       <td><input type="text" name="rut" maxlength="10"/><font color="#666666">Ej: 12345678-9</font></td>
+                       <td><input type="text" name="rut" maxlength="10" onkeypress="return justNumbers(event);" /><font color="#666666">Ej: 12345678-9</font></td>
                        
                    </tr>
                    
