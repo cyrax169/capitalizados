@@ -14,7 +14,6 @@ $tipo_cliente=$_POST['tipo_cliente'];
 $nombres=$nombre1 .' '. $nombre2;
 $apellidos=$apellido1 .' '. $apellido2;
 $licencia = $_POST['licencia'];
-//echo $tipo_cliente,$email,$rut,$telefono,$nombres,$apellidos,$fecha_nacimiento,$region_residencia,$genero,$afp,$cartola,$certificado;
 @session_start();
 $_SESSION['usuariorut']=$rut;
 include "conexion.php"; 
@@ -35,6 +34,9 @@ mysqli_close($conn);
         <meta charset="UTF-8">
         <title>Subir Cartola</title>
          <?php
+              echo '<script type="text/javascript">';
+              include('js/validadorPDF.js');
+              echo '</script>';
               include('header.php');
          ?>
     </head>
@@ -50,7 +52,7 @@ mysqli_close($conn);
                 <br><br>
                 <br><br>
                 <h2>Estás por completar tu registro</h2>
-                <form name="subirCartola" action="procesaCertificado.php" method="POST" enctype="multipart/form-data">
+                <form name="subirCartola" action="procesaCertificado.php" method="POST" enctype="multipart/form-data" onsubmit="return comprueba_extension(this, this.certificado.value)">
                     <table border="1" >
                         <tbody align="center">
                             <tr>
@@ -60,7 +62,7 @@ mysqli_close($conn);
                             
                             <tr>
                                 <td></td>
-                                <td><input type="submit" value="Subir Archivo" name="bSubir" /></td>
+                                <td><input type="submit" value="Subir Archivo" name="bSubir"/></td>
                             </tr>
                         </tbody>
                     </table>
