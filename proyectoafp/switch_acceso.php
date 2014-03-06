@@ -17,7 +17,9 @@ include("conexion.php");
   if($row2['contrasena']==$contrasena){
       $_SESSION['autentica']="si";
       $_SESSION['usuarioActual']=$usuario;
-      $opc=$row2['tipo'];    
+      $opc=$row2['tipo']; 
+      $_SESSION['Usuariotipo']=$opc;
+      
    }else{
       echo $opcdir="<script>location.href='Error_acceso.php';</script>";
    }
