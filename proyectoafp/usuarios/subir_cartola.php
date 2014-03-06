@@ -12,6 +12,9 @@
         <meta charset="UTF-8">
         <title>Subir Cartola</title>
          <?php
+              echo '<script type="text/javascript">';
+              include('../js/validadorPDFCartola.js');
+              echo '</script>';
               include('header.php');
          ?>
     </head>
@@ -28,7 +31,7 @@
            <a href="../Salir.php">Salir</a>
        </div>
             <CENTER>
-                <form name="subirCartola" action="procesarArchivo.php" method="POST" enctype="multipart/form-data">
+                <form name="subirCartola" action="procesarArchivo.php" method="POST" enctype="multipart/form-data" onsubmit="return comprueba_extension(this, this.archivo.value)">
                     <table border="1">
                         <tbody align="center">
                             <tr>
@@ -47,6 +50,7 @@
                             <tr>
                                 <td>Selecciona Año</td>
                                 <td><select name="anio" id="anio">
+                                        <option value="0">Seleccione</option>
                                     <?php
 					for($anio=(date("Y")); 2013<=$anio; $anio--) {
                                         echo "<option value=".$anio.">".$anio."</option>";
