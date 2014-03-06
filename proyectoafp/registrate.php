@@ -65,7 +65,7 @@ include("conexion.php");
                    </tr>
                    <tr>
                        <td height="34"><font color="#666666">Apellidos</font></td>
-                       <td><input type="text" name="apellido1"/><input type="text" name="apellido2"/></td>
+                       <td><input type="text" name="apellido1" onkeypress="return soloLetras(event);"/><input type="text" name="apellido2" onkeypress="return soloLetras(event);"/></td>
                    </tr>
                    <tr>
                        <td height="34"><font color="#666666">Fecha nacimiento</font></td>
@@ -85,7 +85,7 @@ include("conexion.php");
                    </tr>
                    <tr>
                        <td height="34"><font color="#666666">Telefono</font></td>
-                       <td><input type="text" name="telefono"/></td>
+                       <td><input type="text" name="telefono" onkeypress="return justNumbers(event);" /></td>
                    </tr>
                    <tr>
                        <td height="34"><font color="#666666">Región de Residencia</font></td>
