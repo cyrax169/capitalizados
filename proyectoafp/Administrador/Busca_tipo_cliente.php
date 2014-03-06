@@ -4,8 +4,6 @@ include("../conexion.php");
     $conn = dbConnect();
     //$combobox;
 
-  $afp=$_POST['afp']; 
- 
  ?>
 
 <html>
@@ -36,24 +34,23 @@ include("../conexion.php");
                     <tr>
                          <td height="350" width="500"></td>
                          <td height="350" width="700">
-                             <FORM action="ficha.php" method="post"> 
+                             <FORM action="Busca_nombre_tipo_cliente.php" method="post"> 
 <h1></h1>  
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
                    <tr>
-                       <th height="65"><font color="#CC0000">Busqueda de cliente por AFP</font></th>
+                       <th height="65"><font color="#CC0000">Busqueda por tipo de trabajador</font></th>
                        <th></th>
                    </tr>
                </thead>
                <tbody>
                  <tr>
                        <td height="38"><font color="#666666">seleccione nombre</font></td>
-                       <td><select name="nombre_seleccionado">
-                               <OPTION VALUE="0">Seleccione Nombre</OPTION>
-                        <?php        $result2 = mysqli_query($conn,"SELECT * FROM cliente  WHERE afp=$afp ORDER BY nombres ASC");
-                        
-                             while ($row2=mysqli_fetch_array($result2)){ $nombre_apellido=$row2['nombres']." ".$row2['apellidos']?> <OPTION VALUE="<?php echo $row2['rut'] ?>"><?php echo strtoupper($nombre_apellido) ?></OPTION><?php } ?> 
-                    </select></td>
+                       <td><select name="tipo_cliente">
+                               <option VALUE="0">Seleccione tipo</option>
+                               <option VALUE="1">TRABAJADOR ACTIVO</option>
+                               <option VALUE="2">TRABAJADOR JUBILADO</option>
+                           </select></td>
                    </tr>
                     
                     <tr>
