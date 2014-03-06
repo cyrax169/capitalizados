@@ -24,7 +24,7 @@ if (mysqli_connect_errno())
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
 
-mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,region_residencia,tipo_cliente,email,telefono,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento','$region_residencia','$tipo_cliente','$email',$telefono,'$genero','$afp','1','1');");
+mysqli_query($conn,"INSERT INTO cliente (rut,nombres,apellidos,fecha_nacimiento,edad,region_residencia,tipo_cliente,email,telefono,genero,afp,cartola,certificado) VALUES ('$rut','$nombres','$apellidos','$fecha_nacimiento',0,'$region_residencia','$tipo_cliente','$email',$telefono,'$genero','$afp','1','1');");
 mysqli_close($conn); 
 
 ?> 
