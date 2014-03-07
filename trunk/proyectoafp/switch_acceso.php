@@ -4,8 +4,8 @@
 $_SESSION['UsuarioActual']=$_REQUEST['usuario'];
 
 $usuario= $_POST['usuario'];
-$contrasena= $_POST['contrasena'];
-
+$contrasenaNormal= $_POST['contrasena'];
+$contrasena = md5($contrasenaNormal);
 include("conexion.php");
    // $result = "";
     $conn = dbConnect();
