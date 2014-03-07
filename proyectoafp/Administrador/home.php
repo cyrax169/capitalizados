@@ -10,7 +10,7 @@
       header('Location: ../index.php');
  } // Recuerda usar corchetes
  
-echo $_SESSION['Usuariotipo'];
+
 
 
         ?>
