@@ -92,7 +92,7 @@ include("../conexion.php");
                     <tr>
                          <td height="350" width="500"></td>
                          <td height="350" width="700">
-<FORM action="insertarusuario.php" method="post"> 
+<FORM action="insertar_usuario.php" method="post"> 
 <h1></h1>  
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
