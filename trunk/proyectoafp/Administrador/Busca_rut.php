@@ -49,7 +49,7 @@ include("../conexion.php");
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
                    <tr>
-                       <th height="65"><font color="#CC0000">Busqueda de cliente por Rut</font></th>
+                       <th height="65"><font color="#CC0000">Búsqueda de cliente por Rut</font></th>
                        <th></th>
                    </tr>
                </thead>
@@ -58,7 +58,7 @@ include("../conexion.php");
                        <td height="38"><font color="#666666">ingrese rut</font></td>
                        <td><select name="rut">
                                <OPTION VALUE="0">Seleccione Rut</OPTION>
-                        <?php        $result2 = mysqli_query($conn,"SELECT  rut FROM cliente ORDER BY rut+0");
+                        <?php        $result2 = mysqli_query($conn,"SELECT  rut FROM cliente WHERE cliente_activo='1' ORDER BY rut+0");
                         
                              while ($row2=mysqli_fetch_array($result2)){?> <OPTION VALUE="<?php echo $row2['rut'] ?>"><?php echo $row2['rut'] ?></OPTION><?php } ?> 
                     </select></td>

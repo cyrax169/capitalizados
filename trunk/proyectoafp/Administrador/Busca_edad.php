@@ -49,7 +49,7 @@ include("../conexion.php");
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
                    <tr>
-                       <th height="65"><font color="#CC0000">Busqueda de cliente por AFP</font></th>
+                       <th height="65"><font color="#CC0000">Búsqueda de cliente por Rango de Edad</font></th>
                        <th></th>
                    </tr>
                </thead>

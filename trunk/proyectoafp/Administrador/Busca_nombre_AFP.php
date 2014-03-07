@@ -49,7 +49,7 @@ include("../conexion.php");
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
                    <tr>
-                       <th height="65"><font color="#CC0000">Busqueda de cliente por AFP</font></th>
+                       <th height="65"><font color="#CC0000">Búsqueda de cliente por AFP</font></th>
                        <th></th>
                    </tr>
                </thead>
@@ -58,7 +58,7 @@ include("../conexion.php");
                        <td height="38"><font color="#666666">seleccione nombre</font></td>
                        <td><select name="nombre_seleccionado">
                                <OPTION VALUE="0">Seleccione Nombre</OPTION>
-                        <?php        $result2 = mysqli_query($conn,"SELECT * FROM cliente  WHERE afp=$afp ORDER BY nombres ASC");
+                        <?php        $result2 = mysqli_query($conn,"SELECT * FROM cliente  WHERE afp=$afp and cliente_activo='1' ORDER BY nombres ASC");
                         
                              while ($row2=mysqli_fetch_array($result2)){ $nombre_apellido=$row2['nombres']." ".$row2['apellidos']?> <OPTION VALUE="<?php echo $row2['rut'] ?>"><?php echo strtoupper($nombre_apellido) ?></OPTION><?php } ?> 
                     </select></td>
