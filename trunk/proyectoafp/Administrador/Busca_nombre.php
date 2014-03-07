@@ -53,16 +53,16 @@ include("../conexion.php");
                    </tr>
                </thead>
                <tbody>
-                    <?php        $result2 = mysqli_query($conn,"SELECT  rut, nombres, apellidos FROM cliente WHERE cliente_activo='1' ORDER BY nombres ASC");
+                    
+                    <tr>
+                       <td height="38"><font color="#666666">seleccione nombre</font></td>
+                       <td><select name="nombre_seleccionado">
+                               <OPTION VALUE="0">Seleccione Nombre</OPTION>
+                        <?php        $result2 = mysqli_query($conn,"SELECT  rut, nombres, apellidos FROM cliente WHERE cliente_activo='1' ORDER BY nombres ASC");
                         
-                             while ($row2=mysqli_fetch_array($result2)){ $nombre_apellido=$row2['nombres']." ".$row2['apellidos']?>
-                 <tr>
-                     <td height="38">
-                         <input type="radio" name="nombre_seleccionado" value="<?php echo $row2['rut'] ?>" /><font color="#666666"><?php echo strtoupper($nombre_apellido) ?> </font>
-                         
-                         </td>
+                             while ($row2=mysqli_fetch_array($result2)){ $nombre_apellido=$row2['nombres']." ".$row2['apellidos']?> <OPTION VALUE="<?php echo $row2['rut'] ?>"><?php echo strtoupper($nombre_apellido) ?></OPTION><?php } ?> 
+                    </select></td>
                    </tr>
-                    <?php } ?> 
                     <tr>
                        <td height="38"> </td>
                        <td><input  type="submit" value="Ir a Consulta" style='width:170px; height:25px' /></td>
