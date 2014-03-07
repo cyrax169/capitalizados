@@ -6,6 +6,10 @@
  if(empty($_SESSION['usuarioActual'])) { // Recuerda usar corchetes.
  header('Location: ../index.php');
  } // Recuerda usar corchetes
+     if($_SESSION['Usuariotipo']== '1') {
+      header('Location: ../index.php');
+ } //
+ 
 ?>
 
 <html>
