@@ -45,7 +45,7 @@ mysqli_close($conn);
         <div id="page-wrap">
             <div id="contenedor">  
                 <?php
-                include('menu.php');
+                include('usuarios/menuCertificado.php');
                 ?>
             </div>
             <CENTER>
