@@ -4,6 +4,9 @@
  if(empty($_SESSION['usuarioActual'])) { // Recuerda usar corchetes.
  header('Location: ../index.php');
  } // Recuerda usar corchetes
+     if($_SESSION['Usuariotipo']== '1') {
+      header('Location: ../index.php');
+ } //
 $cuatrimestre=$_POST['cuatrimestre'];
 $anio=$_POST['anio'];
     $nombreAlmacenamiento = $_SESSION['usuarioActual']."_".$cuatrimestre."_".$anio.".pdf"; 
