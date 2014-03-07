@@ -55,7 +55,7 @@ include("../conexion.php");
                </thead>
                <tbody>
                  <tr>
-                       <td height="38"><font color="#666666">ingrese rut</font></td>
+                       <td height="38"><font color="#666666">Seleccione rut</font></td>
                        <td><select name="rut">
                                <OPTION VALUE="0">Seleccione Rut</OPTION>
                         <?php        $result2 = mysqli_query($conn,"SELECT  rut FROM cliente WHERE cliente_activo='1' ORDER BY rut+0");
