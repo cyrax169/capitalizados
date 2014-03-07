@@ -67,7 +67,7 @@ include("../conexion.php");
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Registro</title>
+        <title>Ficha Usuario</title>
          <?php
               include('header.php');
          ?>
@@ -92,7 +92,7 @@ include("../conexion.php");
                     <tr>
                          <td height="350" width="500"></td>
                          <td height="350" width="700">
-<FORM action="insertarregistro.php" method="post"> 
+<FORM action="insertarusuario.php" method="post"> 
 <h1></h1>  
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
@@ -149,7 +149,11 @@ include("../conexion.php");
                        <td><a href="<?php echo $url_cartola; ?>" target="_blank">Ultima Cartola</a></td>
                    </tr>
                                     
-                   
+                    <tr>
+                       <td height="38"><br /></td>
+                       <td><input type="submit" value="Aceptar Cliente" name="Aceptar_Cliente" /></td>
+                   </tr>
+                          
                   
                </tbody>
            </table>

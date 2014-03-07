@@ -19,7 +19,7 @@ include("../conexion.php");
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Registro</title>
+        <title>Aceptar Cliente</title>
          <?php
               include('header.php');
          ?>
@@ -44,7 +44,7 @@ include("../conexion.php");
                     <tr>
                          <td height="350" width="500"></td>
                          <td height="350" width="700">
-                             <FORM action="ficha.php" method="post"> 
+                             <FORM action="ficha_validar_registro.php" method="post"> 
 <h1></h1>  
 <table border="0" align="center" bgcolor="#D0D0D0" >
                <thead>
