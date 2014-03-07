@@ -51,7 +51,7 @@ $strSQL = "update cliente set cliente_activo = '1' where rut='$rut';";
                 <br><br>
                 <h2>Usuario añadido como cliente</h2>
                 <form name="home" action="home.php" method="POST" enctype="multipart/form-data" onsubmit="return comprueba_extension(this, this.certificado.value)">
-                    <table border="0" >
+                    <table border="" >
                         <tbody align="center">
                             <tr>
                                 <td></td>
