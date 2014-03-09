@@ -21,7 +21,7 @@ function comprueba_extension(formulario, archivo) {
       if (!permitida) { 
          mierror = "Comprueba la extensión de los archivos a subir. \nSólo se pueden subir archivos con extensiones: " + extensiones_permitidas.join(); 
       	}else{ 
-         	 //submito! 
+            mierror="Archivo pdf cargado";
             formulario.submit(); 
             ok = true; 
       	} 

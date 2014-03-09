@@ -44,7 +44,7 @@ include("conexion.php");
                     <tr>
                          <td height="500" width="500"></td>
                          <td height="450" width="700">
-                             <FORM id="miForm" action="insertarregistro.php" method="post" onsubmit="return valida(this)"> 
+                             <FORM id="miForm" action="validaInsercion.php" method="post" onsubmit="return valida(this)"> 
 <h1></h1>  
 <table border="0" align="top" bgcolor="#D0D0D0" >
                <thead>
