@@ -7,10 +7,10 @@
           <li><a href="nuestrosServicios.php">Nuestros Servicios</a>
           <ul>
               <li><a href="nuestra_asesoria.php">Porqué inclinarse por nuestra asesoría</a></li>
-          <li><a href="URL del enlace">Servicios ofrecidos</a></li>
-          <li><a href="URL del enlace">Beneficios adicionales de una estrategia activa</a></li>
-          <li><a href="URL del enlace">Procedimiento de calculos de honorarios de la asesoría</a></li>
-          <li><a href="URL del enlace">Información relevante para los potenciales clientes</a></li>
+              <li><a href="servicios_ofrecidos.php">Servicios ofrecidos</a></li>
+              <li><a href="nuestrosServicios.php">Beneficios adicionales de una estrategia activa</a></li>
+              <li><a href="honorarios.php">Procedimiento de calculos de honorarios de la asesoría</a></li>
+              <li><a href="informacion_clientes.php">Información relevante para los potenciales clientes</a></li>
           </ul>
           </li>
           <li><a href="acceso.php">Acceso Usuarios</a></li>
